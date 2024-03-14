@@ -1,5 +1,10 @@
+@font-face {
+    font-family: 'UniSansHeavy';
+    src: url('Uni Sans Heavy.otf') format('opentype');
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'UniSansHeavy', Arial, sans-serif;
     background-color: #192124;
     margin: 0;
     padding: 0;
