@@ -126,3 +126,7 @@ h1 {
 .back-btn:hover {
     background-color: #555;
 }
+
+.fa {
+    font-size: inherit;
+  }
