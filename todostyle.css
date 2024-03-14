@@ -121,8 +121,8 @@ h1 {
     cursor: pointer;
     border: none;
     z-index: 999;
-  }
+}
   
-  .back-btn:hover {
+.back-btn:hover {
     background-color: #555;
-  }
+}
