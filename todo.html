@@ -40,14 +40,14 @@
                             const langWithImages = langSymbols.map(lang => {
                                 switch (lang.toLowerCase()) {
                                     case 'python':
-                                        return `<img src="python_symbol.png" alt="${lang}">`;
+                                        return '<img src="python_symbol.png">';
                                     case 'c++':
-                                        return `<img src="cpp_symbol.png" alt="${lang}">`;
+                                        return '<img src="cpp_symbol.png">';
                                     default:
                                         break;
                                 }
                             });
-                            return `<div>${langWithImages.join(' ')}<br>${description}</div>`;
+                            return '<div>${langWithImages.join(\' \')}<br>${description}</div>';
                         }).join('');
                     }
 
