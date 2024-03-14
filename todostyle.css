@@ -6,7 +6,7 @@ body {
 }
   
 .container {
-    background-color: #fff;
+    background-color: #2d383c;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -24,7 +24,7 @@ h1 {
     width: 850px;
     height: 940px;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: #2d383c;
 }
 
 .containerTODO > div {
@@ -40,20 +40,19 @@ h1 {
 }
 
 .left {
-    background-color: #fff;
     border-right: 1px solid #ccc;
     height: 880px;
 }
 
 .upper{
-    background-color: #4CAF50;
+    background-color: #2d6a2f;
     height: 440px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0);
     border-radius: 8px;
 }
 .lower {
-    background-color: #FF5733;
+    background-color: #993227;
     height: 440px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0);
@@ -62,7 +61,7 @@ h1 {
 }
 
 .right {
-    background-color: #e3f5ff;
+    background-color: #414c50;
     height: 880px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0);
