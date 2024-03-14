@@ -70,7 +70,7 @@ h1 {
     }
 }
   
-.textbox:not(:hover) {
+.containerTODO:not(:hover) {
     animation: floatDown 0.5s forwards;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0);
 }
