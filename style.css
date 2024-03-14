@@ -45,7 +45,7 @@ body {
 }
 
 .textbox:not(:hover) {
-  animation: floatDown 0.5s backwards;
+  animation: liftUp 0.5s backwards;
 }
 
 
