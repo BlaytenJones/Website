@@ -41,7 +41,8 @@ h1 {
 }
 
 .left, .right {
-    padding: 0;
+    text-align: center;
+    font-size: 24px;
 }
 
 .left {
@@ -51,6 +52,7 @@ h1 {
 
 .upper{
     background-color: #2d6a2f;
+    color: #104212;
     height: 440px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0);
@@ -58,6 +60,7 @@ h1 {
 }
 .lower {
     background-color: #993227;
+    color: #57110a;
     height: 440px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0);
@@ -67,12 +70,10 @@ h1 {
 
 .right {
     background-color: #414c50;
+    color: #2d383c;
     height: 880px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-    margin-top: 10px;
-    justify-content: center;
-    align-content: center;
 }
 
 .section:hover {
