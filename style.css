@@ -24,15 +24,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100px;
 }
 
 .textbox {
-  width: 200px;
-  height: 100px;
-  background-color: white;
+  width: 100px;
+  height: 180px;
+  background-color: rgb(203, 206, 211);
   border-radius: 10px;
-  border: 2px solid #ccc;
+  border: 2px solid rgb(203, 206, 211);
   text-align: center;
   line-height: 100px;
   cursor: pointer;
@@ -43,6 +43,11 @@ body {
 .textbox:hover {
   animation: liftUp 0.5s forwards;
 }
+
+.textbox:not(:hover) {
+  animation: floatDown 0.5s backwards;
+}
+
 
 @keyframes liftUp {
   0% {
