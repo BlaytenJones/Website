@@ -1,11 +1,8 @@
 body {
-    background-color: #192428;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: #192124;
   }
 
-h1 {color:blueviolet; font-size: xx-large;}
+h1 {color:rgb(212, 212, 222); font-size: xx-large;}
 
 body {
   margin: 0;
@@ -22,7 +19,32 @@ body {
   justify-content: space-around;
   padding: 10px 0;
 }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
+.textbox {
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.textbox:hover {
+  transform: translateY(-10px);
+}
+
+.textbox:active {
+  transform: translateY(0);
+}
 .nav a {
   text-decoration: none;
   color: #fff;
