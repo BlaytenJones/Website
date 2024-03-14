@@ -32,6 +32,23 @@
                     const sections = { completed: [], backlog: [], upNext: [] };
                     let currentSection = null;
     
+                    function createListItems(projects) {
+                        return projects.map(project => {
+                            const [languages, description] = project.split('] ');
+                            const langSymbols = languages.substring(1).split(', ');
+                            const langWithImages = langSymbols.map(lang => {
+                                switch (lang.toLowerCase()) {
+                                    case 'python':
+                                        return `<img src="python_symbol.png" alt="${lang}">`;
+                                    // Add more cases for other languages and their corresponding symbols
+                                    default:
+                                        return lang;
+                                }
+                            });
+                            return `<div>${langWithImages.join(' ')}<br>${description}</div>`;
+                        }).join('');
+                    }
+
                     // Parse the data and categorize projects
                     data.split('\n').forEach(line => {
                         line = line.trim();
@@ -42,19 +59,14 @@
                         } else if (line.startsWith('UP-NEXT:')) {
                             currentSection = 'upNext';
                         } else if (line) {
-                            sections[currentSection].push(line);
+                            sections[currentSection].push(line.replace(/ *\([^)]*\) */g, ''));
                         }
                     });
     
-                    // Function to create HTML list items
-                    function createListItems(projects) {
-                        return projects.map(project => `<li>${project}</li>`).join('');
-                    }
-    
                     // Populate HTML with categorized projects
-                    document.querySelector('.completed-section').innerHTML = `<ul>${createListItems(sections.completed)}</ul>`;
-                    document.querySelector('.backlog-section').innerHTML = `<ul>${createListItems(sections.backlog)}</ul>`;
-                    document.querySelector('.up-next-section').innerHTML = `<ul>${createListItems(sections.upNext)}</ul>`;
+                    document.querySelector('.completed-section').innerHTML = createListItems(sections.completed);
+                    document.querySelector('.backlog-section').innerHTML = createListItems(sections.backlog);
+                    document.querySelector('.up-next-section').innerHTML = createListItems(sections.upNext);
                 })
                 .catch(error => console.error('Error fetching projects:', error));
         </script>
