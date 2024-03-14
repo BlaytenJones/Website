@@ -26,8 +26,8 @@ body {
 }
 
 .textbox {
-  width: 160px;
-  height: 180px;
+  width: 240px;
+  height: 360px;
   background-color: rgb(231, 235, 242);
   border-radius: 10px;
   border: 2px solid rgb(231, 235, 242);
