@@ -34,8 +34,6 @@ h1 {
 
 .left, .right {
     padding: 0;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
 }
 
 .left {
@@ -46,15 +44,21 @@ h1 {
 .upper{
     flex: 1;
     background-color: #4CAF50;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
 }
 .lower {
     flex: 1;
     background-color: #FF5733;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
 }
 
 .right {
     flex: 2;
     background-color: #e3f5ff;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
 }
 
 .section:hover {
