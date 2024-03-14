@@ -36,12 +36,14 @@ body {
   line-height: 100px;
   cursor: pointer;
   position: relative;
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
   margin-right: 20px;
 }
 
 .textbox:hover {
   animation: liftUp 0.5s forwards;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -56,6 +58,7 @@ body {
 
 .textbox:not(:hover) {
   animation: floatDown 0.5s forwards;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
 }
 
 @keyframes floatDown {
