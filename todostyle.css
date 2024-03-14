@@ -20,13 +20,15 @@ h1 {
 
 .containerTODO {
     display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #fff;
 }
 
 .containerTODO > div {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
     flex: 1;
     border-radius: 8px;
     margin: 10px;
