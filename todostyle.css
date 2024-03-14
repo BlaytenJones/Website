@@ -30,12 +30,12 @@ h1 {
     flex: 1;
     border-radius: 8px;
     margin: 10px;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
 }
 
 .left, .right {
     padding: 0;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
 }
 
 .left {
@@ -57,7 +57,7 @@ h1 {
     background-color: #e3f5ff;
 }
 
-.containerTODO:hover {
+.section:hover {
     animation: liftUp 0.5s forwards;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -72,7 +72,7 @@ h1 {
     }
 }
   
-.containerTODO:not(:hover) {
+.section:not(:hover) {
     animation: floatDown 0.5s forwards;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0);
 }
