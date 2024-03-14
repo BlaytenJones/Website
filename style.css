@@ -1,0 +1,36 @@
+body {
+    background-color: #192428;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+h1 {color:blueviolet; font-size: xx-large;}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+/* Style the icons (Font Awesome) */
+.fa {
+  font-size: inherit;
+}
