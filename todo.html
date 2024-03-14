@@ -47,8 +47,8 @@
                                         break;
                                 }
                             });
-                            return '<div>langWithImages</div><br>';
-                        })
+                            return `<div>${langWithImages.join(' ')}<br>${description}</div>`;
+                        }).join('');
                     }
 
                     data.split('\n').forEach(line => {
