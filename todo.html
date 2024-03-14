@@ -14,12 +14,49 @@
         <h1>PROJECTS TO-DO</h1>
         <div class="containerTODO">
             <div class="left">
-                <div class="upper section">COMPLETED</div>
-                <div class="lower section">BACKLOG</div>
+                <div class="upper section">COMPLETED<br>
+                    <div class="completed-section"></div>
+                </div>
+                <div class="lower section">BACKLOG<br>
+                    <div class="backlog-section"></div>
+                </div>
             </div>
-            <div class="right section">
-                UP NEXT
+            <div class="right section">UP NEXT<br>
+                <div class="up-next-section"></div>
             </div>
         </div>
+        <script>
+            fetch('TODO.txt')
+                .then(response => response.text())
+                .then(data => {
+                    const sections = { completed: [], backlog: [], upNext: [] };
+                    let currentSection = null;
+    
+                    // Parse the data and categorize projects
+                    data.split('\n').forEach(line => {
+                        line = line.trim();
+                        if (line.startsWith('BACKLOG:')) {
+                            currentSection = 'backlog';
+                        } else if (line.startsWith('COMPLETED:')) {
+                            currentSection = 'completed';
+                        } else if (line.startsWith('UP-NEXT:')) {
+                            currentSection = 'upNext';
+                        } else if (line) {
+                            sections[currentSection].push(line);
+                        }
+                    });
+    
+                    // Function to create HTML list items
+                    function createListItems(projects) {
+                        return projects.map(project => `<li>${project}</li>`).join('');
+                    }
+    
+                    // Populate HTML with categorized projects
+                    document.querySelector('.completed-section').innerHTML = `<ul>${createListItems(sections.completed)}</ul>`;
+                    document.querySelector('.backlog-section').innerHTML = `<ul>${createListItems(sections.backlog)}</ul>`;
+                    document.querySelector('.up-next-section').innerHTML = `<ul>${createListItems(sections.upNext)}</ul>`;
+                })
+                .catch(error => console.error('Error fetching projects:', error));
+        </script>
     </body>
 </html>

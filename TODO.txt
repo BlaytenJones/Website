@@ -1,0 +1,45 @@
+BACKLOG:
+[ASM] BOOTSECTOR GAME
+[C++] RAYTRACING
+
+COMPLETED:
+[C++] CREATE CONWAY'S GAME OF LIFE
+[CSS, HTML, Javascript] COMPLETE TODO LIST ON WEBSITE
+
+UP-NEXT:
+[CSS, HTML, Java, React] CREATE A CHESS GAME FOR THE BROWSER
+[Python] VOICE ASSISTANT WITH CHAT GPT API (https://www.geeksforgeeks.org/voice-assistant-using-python/)
+[C] SPARSE MATRIX STORAGE (https://www.ibm.com/docs/en/essl/6.3?topic=matrix-sparse-storage-representation)
+[Python] VIDEO SUBTITLE GENERATOR
+[Java] CREATE SUDOKU SOLVER WITH THREADING
+[C++] TEXT EDITOR WITH BASIC AUTOCORRECT (https://www.averylaird.com/programming/the%20text%20editor/2017/09/30/the-piece-table)
+[React] CREATE A WORDLE CLONE WITH REACT (https://bigardone.dev/blog/2016/01/04/trello-tribute-with-phoenix-and-react-pt-1)
+[C#, Javascript] CREATE AN IO GAME
+[C++] POROUS MEDIUM EQUATION USING THE BARENBLATT-KOMPANEETS-ZELDOVICH SIMILARITY SOLUTION AND ITS APPLICATION TO GAS FLOW (https://en.wikipedia.org/wiki/Porous_medium_equation) (https://userpages.umbc.edu/~rostamia/cbook/)
+[Javascript, Python] CREATE A BROWSER PLUGIN USING BEAUTIFULSOUP
+[Java] CREATE BRAIN WAVE READER PROGRAM
+[Angular, Go] REAL TIME CHAT APPLICATION (https://www.thepolyglotdeveloper.com/2016/12/create-real-time-chat-app-golang-angular-2-websockets/)
+[C++] WEBSCRAPER FROM SCRATCH
+[C#] BIOLOGY PREDICTION SIMULATOR BASED ON VIRUS DNA USING BLOOM FILTER AND K-MERS
+[Go] BUILD AN INTERPRETER
+[Swift] MAKE A PHONE GAME
+[C#] PHYSICS SIMULATOR
+[C++] SPREADSHEET
+[C, C++] MAKE A TEMPORAL SEARCH ENGINE
+[C#] MAKE A LETHAL COMPANY MOD
+[Rust] BUILD BROWSER ENGINE (https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html)
+[Python] WRITE A GIT (https://wyag.thb.lt/)
+[Rust] NES EMULATOR (https://bugzmanov.github.io/nes_ebook/)
+[Rust] CREATE OWN LANGUAGE
+[Rust] CREATE OWN COMPILER
+[Rust] CREATE GARBAGE COLLECTION
+[Python] CREATE SONG RECOMMENDER (https://towardsdatascience.com/how-to-build-a-simple-song-recommender-296fcbc8c85)
+[C] CREATE OWN SHELL
+[C++] CREATE CMD TERMINAL
+[C++] CREATE OS
+[Java] CREATE NOSQL DATABASE FROM SCRATCH WITH API (https://betterprogramming.pub/build-a-nosql-database-from-the-scratch-in-1000-lines-of-code-8ed1c15ed924)
+[Python] CREATE PACKET SNIFFER
+[Physical] BUILD A HAM RADIO
+[Physical] BUILD A BATTLEBOT
+[Verilog] VERILOG GAMEBOY
+[Physical] DIAGNOSE AND FIX AN ELECTRONIC ITEM
