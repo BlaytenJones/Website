@@ -19,6 +19,7 @@ body {
   justify-content: space-around;
   padding: 10px 0;
 }
+
 .container {
   display: flex;
   justify-content: center;
@@ -35,16 +36,23 @@ body {
   text-align: center;
   line-height: 100px;
   cursor: pointer;
+  position: relative;
   transition: transform 0.5s ease;
 }
 
 .textbox:hover {
-  transform: translateY(-10px);
+  animation: liftUp 0.5s forwards;
 }
 
-.textbox:active {
-  transform: translateY(0);
+@keyframes liftUp {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-10px);
+  }
 }
+
 .nav a {
   text-decoration: none;
   color: #fff;
