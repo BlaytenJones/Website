@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <title>To-Do List</title>
         <link rel="stylesheet" href="todostyle.css">
+        <link rel="icon" type="image/x-icon" href="ico.png">
     </head>
     <body>
         <a class="back-btn" href="../">
@@ -40,16 +41,16 @@
                                 switch (lang.toLowerCase()) {
                                     case 'python':
                                         return `<img src="python_symbol.png" alt="${lang}">`;
-                                    // Add more cases for other languages and their corresponding symbols
+                                    case 'c++':
+                                        return `<img src="cpp_symbol.png" alt="${lang}">`;
                                     default:
-                                        return lang;
+                                        break;
                                 }
                             });
                             return `<div>${langWithImages.join(' ')}<br>${description}</div>`;
                         }).join('');
                     }
 
-                    // Parse the data and categorize projects
                     data.split('\n').forEach(line => {
                         line = line.trim();
                         if (line.startsWith('BACKLOG:')) {
@@ -63,7 +64,6 @@
                         }
                     });
     
-                    // Populate HTML with categorized projects
                     document.querySelector('.completed-section').innerHTML = createListItems(sections.completed);
                     document.querySelector('.backlog-section').innerHTML = createListItems(sections.backlog);
                     document.querySelector('.up-next-section').innerHTML = createListItems(sections.upNext);
