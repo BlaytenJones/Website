@@ -7,7 +7,7 @@ COMPLETED:
 [CSS, HTML, Javascript] COMPLETE TODO LIST ON WEBSITE
 
 UP-NEXT:
-[CSS, HTML, Java, React] CREATE CHESS GAME FOR BROWSER
+[CSS, HTML, Java, React] CREATE BROWSER CHESS GAME
 [Python] VOICE ASSISTANT WITH CHAT GPT API (https://www.geeksforgeeks.org/voice-assistant-using-python/)
 [C] SPARSE MATRIX STORAGE (https://www.ibm.com/docs/en/essl/6.3?topic=matrix-sparse-storage-representation)
 [Python] VIDEO SUBTITLE GENERATOR
@@ -16,7 +16,7 @@ UP-NEXT:
 [React] WORDLE CLONE WITH REACT (https://bigardone.dev/blog/2016/01/04/trello-tribute-with-phoenix-and-react-pt-1)
 [Cs, Javascript] IO GAME
 [C++] POROUS MEDIUM EQUATION USING THE BARENBLATT-KOMPANEETS-ZELDOVICH SIMILARITY SOLUTION AND ITS APPLICATION TO GAS FLOW (https://en.wikipedia.org/wiki/Porous_medium_equation) (https://userpages.umbc.edu/~rostamia/cbook/)
-[Javascript, Python] BROWSER PLUGIN USING BEAUTIFULSOUP
+[Javascript, Python] BROWSER PLUGIN WITH BEAUTIFULSOUP
 [Java] BRAIN WAVE READER PROGRAM
 [Angular, Go] REAL TIME CHAT APPLICATION (https://www.thepolyglotdeveloper.com/2016/12/create-real-time-chat-app-golang-angular-2-websockets/)
 [C++] WEBSCRAPER FROM SCRATCH
@@ -37,6 +37,6 @@ UP-NEXT:
 [C] CREATE OWN SHELL
 [C++] CREATE CMD TERMINAL
 [C++] CREATE OS
-[Java] NOSQL DATABASE FROM SCRATCH WITH API (https://betterprogramming.pub/build-a-nosql-database-from-the-scratch-in-1000-lines-of-code-8ed1c15ed924)
+[Java] NOSQL DATABASE WITH API (https://betterprogramming.pub/build-a-nosql-database-from-the-scratch-in-1000-lines-of-code-8ed1c15ed924)
 [Python] PACKET SNIFFER
 [Verilog] VERILOG GAMEBOY

@@ -16,14 +16,14 @@
         <div class="containerTODO">
             <div class="left">
                 <div class="upper section">COMPLETED<br>
-                    <div class="completed-section"></div>
+                    <ul><div class="completed-section"></div></ul>
                 </div>
                 <div class="lower section">BACKLOG<br>
-                    <div class="backlog-section"></div>
+                    <ul><div class="backlog-section"></div></ul>
                 </div>
             </div>
             <div class="right section">UP NEXT<br>
-                <div class="up-next-section"></div>
+                <ul><div class="up-next-section"></div></ul>
             </div>
         </div>
         <script>
@@ -38,7 +38,7 @@
                             const [languages, description] = project.split('] ');
                             const langSymbols = languages.substring(1).split(', ');
                             const langWithImages = langSymbols.map(lang => `&#160;<img class="project-image" src="${lang.toLowerCase()}.png">`);
-                            return `<div>${description}${langWithImages.join(' ')}</div>`;
+                            return `<li>${description}${langWithImages.join(' ')}</li>`;
                         }).join('');
                     }
 
