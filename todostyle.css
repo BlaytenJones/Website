@@ -52,6 +52,13 @@ h1 {
     height: 880px;
 }
 
+.project-image {
+    max-width: 15px;
+    max-height: 15px;
+    width: auto;
+    height: auto;
+}
+
 .upper{
     background-color: #2d6a2f;
     color: #104212;
