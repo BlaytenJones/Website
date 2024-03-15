@@ -8,21 +8,41 @@
         <link href="/style.css" rel="stylesheet" type="text/css" media="all">
         <link rel="icon" type="image/x-icon" href="ico.png">
     </head>
-    <body id="page-top">
-        <!-- Navigation -->
-        <div class="nav">
-            <a href="#home">About<i class="fa fa-home"></i></a>
-            <a href="#about">Skills<i class="fa fa-info-circle"></i></a>
-            <a href="#services">Projects<i class="fa fa-cogs"></i></a>
-            <a href="#contact">Timeline/Contact/<i class="fa fa-envelope"></i></a>
-            <a class="nav-link" href="College Resume.pdf" title="View Resume" target="blank"><b><i class="fa fa-file-pdf-o"></i> Resume</b></a>
+    <body>
+        <h1>Welcome to my Website!</h1>
+        <div class="carousel">
+            <div class="card active">
+                <div class="textbox">About</div>
+            </div>
+            <div class="card">
+                <div class="textbox">Projects</div>
+            </div>
+            <div class="card">
+                <div class="textbox">Resume</div>
+            </div>
+            <div class="card">
+                <a class="textbox" href="todo.html">To-do</a>
+            </div>
         </div>
+        <button class="prev">Previous</button>
+        <button class="next">Next</button>
+        <script>
+            const prevBtn = document.querySelector('.prev');
+            const nextBtn = document.querySelector('.next');
+
+            prevBtn.addEventListener('click', () => {
+            const activeCard = document.querySelector('.active');
+            const prevCard = activeCard.previousElementSibling || activeCard.parentElement.lastElementChild;
+            activeCard.classList.remove('active');
+            prevCard.classList.add('active');
+            });
+
+            nextBtn.addEventListener('click', () => {
+            const activeCard = document.querySelector('.active');
+            const nextCard = activeCard.nextElementSibling || activeCard.parentElement.firstElementChild;
+            activeCard.classList.remove('active');
+            nextCard.classList.add('active');
+            });
+        </script>
     </body>
-    <h1>Welcome to my Website!</h1>
-    <div class="container">
-        <div class="textbox">About</div>
-        <div class="textbox">Projects</div>
-        <div class="textbox">Resume</div>
-        <a class="textbox" href="todo.html">To-do</a>
-    </div>
 </html>
