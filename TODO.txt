@@ -14,19 +14,19 @@ UP-NEXT:
 [Java] CREATE SUDOKU SOLVER WITH THREADING
 [C++] TEXT EDITOR WITH BASIC AUTOCORRECT (https://www.averylaird.com/programming/the%20text%20editor/2017/09/30/the-piece-table)
 [React] CREATE A WORDLE CLONE WITH REACT (https://bigardone.dev/blog/2016/01/04/trello-tribute-with-phoenix-and-react-pt-1)
-[C#, Javascript] CREATE AN IO GAME
+[Cs, Javascript] CREATE AN IO GAME
 [C++] POROUS MEDIUM EQUATION USING THE BARENBLATT-KOMPANEETS-ZELDOVICH SIMILARITY SOLUTION AND ITS APPLICATION TO GAS FLOW (https://en.wikipedia.org/wiki/Porous_medium_equation) (https://userpages.umbc.edu/~rostamia/cbook/)
 [Javascript, Python] CREATE A BROWSER PLUGIN USING BEAUTIFULSOUP
 [Java] CREATE BRAIN WAVE READER PROGRAM
 [Angular, Go] REAL TIME CHAT APPLICATION (https://www.thepolyglotdeveloper.com/2016/12/create-real-time-chat-app-golang-angular-2-websockets/)
 [C++] WEBSCRAPER FROM SCRATCH
-[C#] BIOLOGY PREDICTION SIMULATOR BASED ON VIRUS DNA USING BLOOM FILTER AND K-MERS
+[Cs] BIOLOGY PREDICTION SIMULATOR BASED ON VIRUS DNA USING BLOOM FILTER AND K-MERS
 [Go] BUILD AN INTERPRETER
 [Swift] MAKE A PHONE GAME
-[C#] PHYSICS SIMULATOR
+[Cs] PHYSICS SIMULATOR
 [C++] SPREADSHEET
 [C, C++] MAKE A TEMPORAL SEARCH ENGINE
-[C#] MAKE A LETHAL COMPANY MOD
+[Cs] MAKE A LETHAL COMPANY MOD
 [Rust] BUILD BROWSER ENGINE (https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html)
 [Python] WRITE A GIT (https://wyag.thb.lt/)
 [Rust] NES EMULATOR (https://bugzmanov.github.io/nes_ebook/)
