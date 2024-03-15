@@ -39,7 +39,4 @@ UP-NEXT:
 [C++] CREATE OS
 [Java] CREATE NOSQL DATABASE FROM SCRATCH WITH API (https://betterprogramming.pub/build-a-nosql-database-from-the-scratch-in-1000-lines-of-code-8ed1c15ed924)
 [Python] CREATE PACKET SNIFFER
-[Physical] BUILD A HAM RADIO
-[Physical] BUILD A BATTLEBOT
 [Verilog] VERILOG GAMEBOY
-[Physical] DIAGNOSE AND FIX AN ELECTRONIC ITEM
