@@ -37,16 +37,7 @@
                         return projects.map(project => {
                             const [languages, description] = project.split('] ');
                             const langSymbols = languages.substring(1).split(', ');
-                            const langWithImages = langSymbols.map(lang => {
-                                switch (lang.toLowerCase()) {
-                                    case 'python':
-                                        return '<img src="python_symbol.png">';
-                                    case 'c++':
-                                        return '<img src="cpp_symbol.png">';
-                                    default:
-                                        break;
-                                }
-                            });
+                            const langWithImages = langSymbols.map(lang => `<img src="${lang}">`);
                             return `<div>${description}${langWithImages.join(' ')}</div>`;
                         }).join('');
                     }
