@@ -37,7 +37,7 @@
                         return projects.map(project => {
                             const [languages, description] = project.split('] ');
                             const langSymbols = languages.substring(1).split(', ');
-                            const langWithImages = langSymbols.map(lang => `<img class="project-image" src="${lang.toLowerCase()}.png">`);
+                            const langWithImages = langSymbols.map(lang => `&#160;<img class="project-image" src="${lang.toLowerCase()}.png">`);
                             return `<div>${description}${langWithImages.join(' ')}</div>`;
                         }).join('');
                     }
