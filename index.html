@@ -31,17 +31,30 @@
             const nextBtn = document.querySelector('.next');
 
             prevBtn.addEventListener('click', () => {
-            const activeCard = document.querySelector('.active');
-            const prevCard = activeCard.previousElementSibling || activeCard.parentElement.lastElementChild;
-            activeCard.classList.remove('active');
-            prevCard.classList.add('active');
+                const activeCard = document.querySelector('.active');
+                const prevCard = activeCard.previousElementSibling || activeCard.parentElement.lastElementChild;
+                activeCard.classList.remove('active');
+                prevCard.classList.add('active');
+
+                const rotateDirection = prevCard === activeCard.parentElement.lastElementChild ? 1 : -1;
+                prevCard.style.transform = `translateX(0) rotateY(${rotateDirection * 30}deg) scale(1.2)`;
+                setTimeout(() => {
+                    prevCard.style.transition = 'transform 0.5s ease';
+                    prevCard.style.transform = `translateX(0) rotateY(0deg) scale(1.2)`;
+                }, 50);
             });
 
             nextBtn.addEventListener('click', () => {
-            const activeCard = document.querySelector('.active');
-            const nextCard = activeCard.nextElementSibling || activeCard.parentElement.firstElementChild;
-            activeCard.classList.remove('active');
-            nextCard.classList.add('active');
+                const activeCard = document.querySelector('.active');
+                const nextCard = activeCard.nextElementSibling || activeCard.parentElement.firstElementChild;
+                activeCard.classList.remove('active');
+                nextCard.classList.add('active');
+                const rotateDirection = nextCard === activeCard.parentElement.firstElementChild ? -1 : 1;
+                nextCard.style.transform = `translateX(0) rotateY(${rotateDirection * -30}deg) scale(1.2)`;
+                setTimeout(() => {
+                    nextCard.style.transition = 'transform 0.5s ease';
+                    nextCard.style.transform = `translateX(0) rotateY(0deg) scale(1.2)`;
+                }, 50);
             });
         </script>
     </body>
