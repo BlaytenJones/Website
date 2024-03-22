@@ -169,7 +169,7 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
   font-size: inherit;
 }
 
-.carousel__item:hover {
+/*.carousel__item:hover {
   animation: liftUp 0.5s forwards;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -195,4 +195,4 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
   100% {
       transform: translateX(0);
   }
-}
+}*/
