@@ -111,11 +111,6 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
           animation-delay: calc(3s * 2);
 }
 
-.carousel__item:last-child {
-  -webkit-animation-delay: calc(-3s * 2);
-          animation-delay: calc(-3s * 2);
-}
-
 .carousel__item-head {
   border-radius: 50%;
   background-color: #d7f7fc;
@@ -150,22 +145,22 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
     opacity: 0;
     visibility: hidden;
   }
-  3%, 11.1111111111% {
+  3%, 25% {
     transform: translateX(100%) scale(0.7);
     opacity: 0.4;
     visibility: visible;
   }
-  14.1111111111%, 22.2222222222% {
+  28%, 50% {
     transform: translateX(0) scale(1);
     opacity: 1;
     visibility: visible;
   }
-  25.2222222222%, 33.3333333333% {
+  53%, 75% {
     transform: translateX(-100%) scale(0.7);
     opacity: 0.4;
     visibility: visible;
   }
-  36.3333333333% {
+  78% {
     transform: translateX(-100%) scale(0.5);
     opacity: 0;
     visibility: visible;
@@ -183,22 +178,22 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
     opacity: 0;
     visibility: hidden;
   }
-  3%, 11.1111111111% {
+  3%, 25% {
     transform: translateX(100%) scale(0.7);
     opacity: 0.4;
     visibility: visible;
   }
-  14.1111111111%, 22.2222222222% {
+  28%, 50% {
     transform: translateX(0) scale(1);
     opacity: 1;
     visibility: visible;
   }
-  25.2222222222%, 33.3333333333% {
+  53%, 75% {
     transform: translateX(-100%) scale(0.7);
     opacity: 0.4;
     visibility: visible;
   }
-  36.3333333333% {
+  78% {
     transform: translateX(-100%) scale(0.5);
     opacity: 0;
     visibility: visible;
