@@ -168,31 +168,3 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
 .fa {
   font-size: inherit;
 }
-
-/*.carousel__item:hover {
-  animation: liftUp 0.5s forwards;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-@keyframes liftUp {
-  0% {
-      transform: translateX(0);
-  }
-  100% {
-      transform: translateX(-10px);
-  }
-}
-
-.carousel__item:not(:hover) {
-  animation: floatDown 0.5s forwards;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-}
-
-@keyframes floatDown {
-  0% {
-      transform: translateX(-10px);
-  }
-  100% {
-      transform: translateX(0);
-  }
-}*/
