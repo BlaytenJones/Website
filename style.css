@@ -40,10 +40,10 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
 
 @keyframes liftUp {
   0% {
-      transform: translateY(0);
+      transform: translateX(0);
   }
   100% {
-      transform: translateY(-10px);
+      transform: translateX(-10px);
   }
 }
 
@@ -54,10 +54,10 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
 
 @keyframes floatDown {
   0% {
-      transform: translateY(-10px);
+      transform: translateX(-10px);
   }
   100% {
-      transform: translateY(0);
+      transform: translateX(0);
   }
 }
 
@@ -87,8 +87,8 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
   opacity: 0;
   filter: drop-shadow(0 2px 2px #555);
   will-change: transform, opacity;
-  -webkit-animation: carousel-animate-vertical 27s linear infinite;
-          animation: carousel-animate-vertical 27s linear infinite;
+  -webkit-animation: carousel-animate-horizontal 27s linear infinite;
+          animation: carousel-animate-horizontal 27s linear infinite;
 }
 
 .carousel__item:nth-child(1) {
@@ -144,67 +144,67 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
   margin-top: 10px;
 }
 
-@-webkit-keyframes carousel-animate-vertical {
+@-webkit-keyframes carousel-animate-horizontal {
   0% {
-    transform: translateY(100%) scale(0.5);
+    transform: translateX(100%) scale(0.5);
     opacity: 0;
     visibility: hidden;
   }
   3%, 11.1111111111% {
-    transform: translateY(100%) scale(0.7);
+    transform: translateX(100%) scale(0.7);
     opacity: 0.4;
     visibility: visible;
   }
   14.1111111111%, 22.2222222222% {
-    transform: translateY(0) scale(1);
+    transform: translateX(0) scale(1);
     opacity: 1;
     visibility: visible;
   }
   25.2222222222%, 33.3333333333% {
-    transform: translateY(-100%) scale(0.7);
+    transform: translateX(-100%) scale(0.7);
     opacity: 0.4;
     visibility: visible;
   }
   36.3333333333% {
-    transform: translateY(-100%) scale(0.5);
+    transform: translateX(-100%) scale(0.5);
     opacity: 0;
     visibility: visible;
   }
   100% {
-    transform: translateY(-100%) scale(0.5);
+    transform: translateX(-100%) scale(0.5);
     opacity: 0;
     visibility: hidden;
   }
 }
 
-@keyframes carousel-animate-vertical {
+@keyframes carousel-animate-horizontal {
   0% {
-    transform: translateY(100%) scale(0.5);
+    transform: translateX(100%) scale(0.5);
     opacity: 0;
     visibility: hidden;
   }
   3%, 11.1111111111% {
-    transform: translateY(100%) scale(0.7);
+    transform: translateX(100%) scale(0.7);
     opacity: 0.4;
     visibility: visible;
   }
   14.1111111111%, 22.2222222222% {
-    transform: translateY(0) scale(1);
+    transform: translateX(0) scale(1);
     opacity: 1;
     visibility: visible;
   }
   25.2222222222%, 33.3333333333% {
-    transform: translateY(-100%) scale(0.7);
+    transform: translateX(-100%) scale(0.7);
     opacity: 0.4;
     visibility: visible;
   }
   36.3333333333% {
-    transform: translateY(-100%) scale(0.5);
+    transform: translateX(-100%) scale(0.5);
     opacity: 0;
     visibility: visible;
   }
   100% {
-    transform: translateY(-100%) scale(0.5);
+    transform: translateX(-100%) scale(0.5);
     opacity: 0;
     visibility: hidden;
   }
