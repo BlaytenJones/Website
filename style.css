@@ -18,49 +18,6 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
   height: 100px;
 }
 
-.textbox {
-  width: 240px;
-  height: 360px;
-  background-color: rgb(231, 235, 242);
-  border-radius: 10px;
-  border: 2px solid rgb(231, 235, 242);
-  text-align: center;
-  line-height: 100px;
-  cursor: pointer;
-  position: absolute;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-}
-
-.textbox:hover {
-  animation: liftUp 0.5s forwards;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-
-@keyframes liftUp {
-  0% {
-      transform: translateX(0);
-  }
-  100% {
-      transform: translateX(-10px);
-  }
-}
-
-.textbox:not(:hover) {
-  animation: floatDown 0.5s forwards;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-}
-
-@keyframes floatDown {
-  0% {
-      transform: translateX(-10px);
-  }
-  100% {
-      transform: translateX(0);
-  }
-}
-
 .wrapper {
   background: linear-gradient(45deg, #0b0b41, #3155ca);
   height: 100%;
@@ -87,6 +44,8 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
   opacity: 0;
   filter: drop-shadow(0 2px 2px #555);
   will-change: transform, opacity;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
   -webkit-animation: carousel-animate-horizontal 12s linear infinite;
           animation: carousel-animate-horizontal 12s linear infinite;
 }
@@ -208,4 +167,32 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
 /* Font Awesome Icons */
 .fa {
   font-size: inherit;
+}
+
+.carousel__item:hover {
+  animation: liftUp 0.5s forwards;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes liftUp {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-10px);
+  }
+}
+
+.carousel__item:not(:hover) {
+  animation: floatDown 0.5s forwards;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+}
+
+@keyframes floatDown {
+  0% {
+      transform: translateX(-10px);
+  }
+  100% {
+      transform: translateX(0);
+  }
 }

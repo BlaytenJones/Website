@@ -53,7 +53,30 @@
           
         <button class="prev">Previous</button>
         <button class="next">Next</button>
+        
         <script>
-        </script>
+            const prevButton = document.querySelector('.prev');
+            const nextButton = document.querySelector('.next');
+            const carousel = document.querySelector('.carousel');
+            let currentIndex = 0;
+        
+            prevButton.addEventListener('click', () => {
+              currentIndex = (currentIndex - 1 + 4) % 4;
+              moveCarousel();
+            });
+        
+            nextButton.addEventListener('click', () => {
+              currentIndex = (currentIndex + 1) % 4;
+              moveCarousel();
+            });
+        
+            function moveCarousel() {
+              const items = document.querySelectorAll('.carousel__item');
+              items.forEach((item, index) => {
+                const distance = (index - currentIndex) * 100;
+                item.style.transform = `translateX(${distance}%)`;
+              });
+            }
+          </script>
     </body>
 </html>
