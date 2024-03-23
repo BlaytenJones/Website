@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
   
-    const nextButton = document.querySelector('.leftButton');
-    const prevButton = document.querySelector('.rightButton');
+    const nextButton = document.querySelector('prev');
+    const prevButton = document.querySelector('next');
   
     nextButton.addEventListener('click', moveToNextItem);
     prevButton.addEventListener('click', moveToPrevItem);
