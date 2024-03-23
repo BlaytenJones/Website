@@ -31,9 +31,10 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
   
-    const nextButton = document.querySelector('prev');
-    const prevButton = document.querySelector('next');
+    const nextButton = document.getElementById('rightButton');
+    const prevButton = document.getElementById('leftButton');
   
     nextButton.addEventListener('click', moveToNextItem);
     prevButton.addEventListener('click', moveToPrevItem);
+    console.log("AAAAAAA");
   });
