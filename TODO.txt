@@ -7,7 +7,8 @@ COMPLETED:
 [CSS, HTML, Javascript] COMPLETE TODO LIST ON WEBSITE
 
 UP-NEXT:
-[CSS, HTML, Java, React] CREATE BROWSER CHESS GAME
+[CSS, HTML, Javascript] CREATE A CAROUSEL
+[CSS, HTML, PHP, Java, React] CREATE BROWSER CHESS GAME
 [Python] VOICE ASSISTANT WITH CHAT GPT API (https://www.geeksforgeeks.org/voice-assistant-using-python/)
 [C] SPARSE MATRIX STORAGE (https://www.ibm.com/docs/en/essl/6.3?topic=matrix-sparse-storage-representation)
 [Python] VIDEO SUBTITLE GENERATOR
@@ -32,6 +33,7 @@ UP-NEXT:
 [Rust] NES EMULATOR (https://bugzmanov.github.io/nes_ebook/)
 [Rust] CREATE OWN LANGUAGE
 [Rust] CREATE OWN COMPILER
+[PHP] CREATE WEBSERVER
 [Rust] GARBAGE COLLECTOR
 [Python] SONG RECOMMENDER (https://towardsdatascience.com/how-to-build-a-simple-song-recommender-296fcbc8c85)
 [C] CREATE OWN SHELL
@@ -40,3 +42,4 @@ UP-NEXT:
 [Java] NOSQL DATABASE WITH API (https://betterprogramming.pub/build-a-nosql-database-from-the-scratch-in-1000-lines-of-code-8ed1c15ed924)
 [Python] PACKET SNIFFER
 [Verilog] VERILOG GAMEBOY
+[Physical] MAKE A HAM RADIO
