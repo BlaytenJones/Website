@@ -79,6 +79,10 @@
                   }
                   updateCarousel();
                 }
+
+                function stopMove() {
+                    carousel.classList.add('paused');
+                }
               
                 function updateCarousel() {
                   items.forEach((item, index) => {
@@ -94,7 +98,9 @@
                 const prevButton = document.getElementById('leftButton');
               
                 nextButton.addEventListener('click', moveToNextItem);
+                nextButton.addEventListener('click', stopMove);
                 prevButton.addEventListener('click', moveToPrevItem);
+                prevButton.addEventListener('click', stopMove);
                 console.log("AAAAAAA");
               });
         </script>

@@ -166,6 +166,11 @@ it needs to split these into separate animations and what not*/
   }
 }
 
+.carousel.paused .carousel__item {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
 /* Font Awesome Icons */
 .fa {
   font-size: inherit;
