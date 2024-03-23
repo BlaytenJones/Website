@@ -1,13 +1,39 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const leftButton = document.getElementById("leftButton");
-    const rightButton = document.getElementById("rightButton");
-    const carousel = document.querySelector(".carousel");
+    const carousel = document.querySelector('.carousel');
+    const items = carousel.querySelectorAll('.carousel__item');
+    let currentIndex = 0;
   
-    leftButton.addEventListener("click", function() {
-      carousel.scrollLeft -= carousel.offsetWidth;
-    });
+    function moveToNextItem() {
+      if (currentIndex < items.length - 1) {
+        currentIndex++;
+      } else {
+        currentIndex = 0;
+      }
+      updateCarousel();
+    }
   
-    rightButton.addEventListener("click", function() {
-      carousel.scrollLeft += carousel.offsetWidth;
-    });
+    function moveToPrevItem() {
+      if (currentIndex > 0) {
+        currentIndex--;
+      } else {
+        currentIndex = items.length - 1;
+      }
+      updateCarousel();
+    }
+  
+    function updateCarousel() {
+      items.forEach((item, index) => {
+        if (index === currentIndex) {
+          item.style.transform = 'translateX(0)';
+        } else {
+          item.style.transform = 'translateX(100%)';
+        }
+      });
+    }
+  
+    const nextButton = document.querySelector('.leftButton');
+    const prevButton = document.querySelector('.rightButton');
+  
+    nextButton.addEventListener('click', moveToNextItem);
+    prevButton.addEventListener('click', moveToPrevItem);
   });
