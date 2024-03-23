@@ -61,6 +61,7 @@
                 let currentIndex = 0;
               
                 function moveToNextItem() {
+                  console.log("next");
                   if (currentIndex < items.length - 1) {
                     currentIndex++;
                   } else {
@@ -70,6 +71,7 @@
                 }
               
                 function moveToPrevItem() {
+                  console.log("prev");
                   if (currentIndex > 0) {
                     currentIndex--;
                   } else {
