@@ -51,26 +51,6 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
           animation: carousel-animate-horizontal 8s cubic-bezier(0.31, -0.21, 0.72, 1.28) infinite;
 }
 
-.carousel__item:nth-child(1) {
-  -webkit-animation-delay: calc(0s * -1);
-          animation-delay: calc(0s * -1);
-}
-
-.carousel__item:nth-child(2) {
-  -webkit-animation-delay: calc(0s * -2);
-          animation-delay: calc(0s * -2);
-}
-
-.carousel__item:nth-child(3) {
-  -webkit-animation-delay: calc(0s * -3);
-          animation-delay: calc(0s * -3);
-}
-
-.carousel__item:nth-child(4) {
-  -webkit-animation-delay: calc(0s * -4);
-          animation-delay: calc(0s * -4);
-}
-
 .carousel__item-head {
   border-radius: 50%;
   background-color: #d7f7fc;
