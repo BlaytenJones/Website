@@ -61,13 +61,19 @@
                 function stopMove() {
                     carousel.classList.add('paused');
                 }
+
+                function moveForward() {
+                    setTimeout(function(){
+                        carousel.classList.remove('paused');
+                    }, 3000);
+                }
               
                 const nextButton = document.getElementById('rightButton');
                 const prevButton = document.getElementById('leftButton');
               
                 nextButton.addEventListener('click', stopMove);
+                nextButton.addEventListener('click', moveForward);
                 prevButton.addEventListener('click', stopMove);
-                console.log("AAAAAAA");
               });
         </script>
     </body>
