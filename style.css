@@ -71,7 +71,7 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
           animation-delay: calc(1s * -4);
 }
 
-.reverse-animation {
+.carousel.reverse-animation .carousel__item {
   animation-direction: reverse;
 }
 
