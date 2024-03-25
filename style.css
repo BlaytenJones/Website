@@ -34,7 +34,6 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
   display: flex;
   justify-content: center;
   flex-direction: column;
-  --dir: 1;
 }
 
 .carousel__item {
@@ -48,6 +47,7 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
   will-change: transform, opacity;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+  --dir: 1;
   -webkit-animation: carousel-animate-horizontal 4s cubic-bezier(0.31, -0.21, 0.72, 1.28) infinite;
           animation: carousel-animate-horizontal 4s cubic-bezier(0.31, -0.21, 0.72, 1.28) infinite;
 }
