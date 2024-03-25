@@ -46,30 +46,30 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
   will-change: transform, opacity;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-  -webkit-animation: carousel-animate-horizontal 12s cubic-bezier(0.31, -0.21, 0.72, 1.28) infinite;
-          animation: carousel-animate-horizontal 12s cubic-bezier(0.31, -0.21, 0.72, 1.28) infinite;
+  -webkit-animation: carousel-animate-horizontal 8s cubic-bezier(0.31, -0.21, 0.72, 1.28) infinite;
+          animation: carousel-animate-horizontal 8s cubic-bezier(0.31, -0.21, 0.72, 1.28) infinite;
 }
 
 /*get rid of these and instead do the animation simultaneously on all objects. Problem: the animation does it all at once
 it needs to split these into separate animations and what not*/
 .carousel__item:nth-child(1) {
-  -webkit-animation-delay: calc(3s * -1);
-          animation-delay: calc(3s * -1);
+  -webkit-animation-delay: calc(2s * -1);
+          animation-delay: calc(2s * -1);
 }
 
 .carousel__item:nth-child(2) {
-  -webkit-animation-delay: calc(3s * -2);
-          animation-delay: calc(3s * -2);
+  -webkit-animation-delay: calc(2s * -2);
+          animation-delay: calc(2s * -2);
 }
 
 .carousel__item:nth-child(3) {
-  -webkit-animation-delay: calc(3s * -3);
-          animation-delay: calc(3s * -3);
+  -webkit-animation-delay: calc(2s * -3);
+          animation-delay: calc(2s * -3);
 }
 
 .carousel__item:nth-child(4) {
-  -webkit-animation-delay: calc(3s * -4);
-          animation-delay: calc(3s * -4);
+  -webkit-animation-delay: calc(2s * -4);
+          animation-delay: calc(2s * -4);
 }
 
 .carousel__item-head {
