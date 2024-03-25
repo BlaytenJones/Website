@@ -74,7 +74,6 @@
                 function moveForward() {
                     carousel.classList.remove('paused');
                     carousel.classList.remove('reverse-animation');
-                    carousel.classList.style.setProperty('--dir', '1');
                     setTimeout(function(){
                         carousel.classList.add('paused');
                     }, 1000);
@@ -83,7 +82,6 @@
                 function moveBackward() {
                     carousel.classList.remove('paused');
                     carousel.classList.add('reverse-animation');
-                    carousel.classList.style.setProperty('--dir', '-1');
                     setTimeout(function(){
                         carousel.classList.add('paused');
                     }, 1000);

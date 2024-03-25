@@ -53,27 +53,28 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
 }
 
 .carousel__item:nth-child(1) {
-  -webkit-animation-delay: calc(var(dir)*1s * -1);
-          animation-delay: calc(var(dir)*1s * -1);
+  -webkit-animation-delay: calc(var(--dir)*1s * -1);
+          animation-delay: calc(var(--dir)*1s * -1);
 }
 
 .carousel__item:nth-child(2) {
-  -webkit-animation-delay: calc(var(dir)*1s * -2);
-          animation-delay: calc(var(dir)*1s * -2);
+  -webkit-animation-delay: calc(var(--dir)*1s * -2);
+          animation-delay: calc(var(--dir)*1s * -2);
 }
 
 .carousel__item:nth-child(3) {
-  -webkit-animation-delay: calc(var(dir)*1s * -3);
-          animation-delay: calc(var(dir)*1s * -3);
+  -webkit-animation-delay: calc(var(--dir)*1s * -3);
+          animation-delay: calc(var(--dir)*1s * -3);
 }
 
 .carousel__item:nth-child(4) {
-  -webkit-animation-delay: calc(var(dir)*1s * -4);
-          animation-delay: calc(var(dir)*1s * -4);
+  -webkit-animation-delay: calc(var(--dir)*1s * -4);
+          animation-delay: calc(var(--dir)*1s * -4);
 }
 
 .carousel.reverse-animation .carousel__item {
   animation-direction: reverse;
+  --dir: -1;
 }
 
 .carousel__item-head {
@@ -177,5 +178,5 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
 
 /* Font Awesome Icons */
 .fa {
-  font-size: 78px;
+  font-size: inherit;
 }
