@@ -69,10 +69,21 @@
 
                 function moveForward() {
                     carousel.classList.remove('paused');
+                    carousel.classList.remove('reverse-animation');
                     setTimeout(function(){
                         carousel.classList.add('paused');
                     }, 1000);
                 }
+
+                function moveBackward() {
+                    carousel.classList.remove('paused');
+                    carousel.classList.add('reverse-animation');
+                    setTimeout(function(){
+                        carousel.classList.add('paused');
+                    }, 1000);
+                }
+
+                carousel.classList.remove('reverse-animation');
                 
                 const nextButton = document.getElementById('rightButton');
                 const prevButton = document.getElementById('leftButton');
@@ -80,6 +91,7 @@
                 nextButton.addEventListener('click', stopMove);
                 nextButton.addEventListener('click', moveForward);
                 prevButton.addEventListener('click', stopMove);
+                prevButton.addEventListener('click', moveBackward);
               });
         </script>
     </body>

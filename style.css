@@ -71,6 +71,10 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
           animation-delay: calc(1s * -4);
 }
 
+.reverse-animation {
+  animation-direction: reverse;
+}
+
 .carousel__item-head {
   border-radius: 50%;
   background-color: #d7f7fc;
