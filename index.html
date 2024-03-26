@@ -82,9 +82,9 @@
                 function moveBackward() {
                     carousel.classList.remove('paused');
                     carousel.classList.add('reverse-animation');
-                    var children = parent.children;
+                    var children = carousel.children;
                     var lastChild = children[children.length - 1];
-                    parent.insertBefore(lastChild, children[0]);
+                    carousel.insertBefore(lastChild, children[0]);
                     for (var i = 0; i < children.length; i++) {
                         children[i].setAttribute('order', i + 1);
                     }
