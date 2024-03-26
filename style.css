@@ -53,23 +53,23 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
 }
 
 .carousel__item:nth-child(1) {
-  -webkit-animation-delay: calc(var(--dir)*1s * -1);
-          animation-delay: calc(var(--dir)*1s * -1);
+  -webkit-animation-delay: calc(1s * (-1 + var(--dir)));
+          animation-delay: calc(1s * (-1 + var(--dir)));
 }
 
 .carousel__item:nth-child(2) {
-  -webkit-animation-delay: calc(var(--dir)*1s * -2);
-          animation-delay: calc(var(--dir)*1s * -2);
+  -webkit-animation-delay: calc(1s * (-2 + var(--dir)));
+          animation-delay: calc(1s * (-2 + var(--dir)));
 }
 
 .carousel__item:nth-child(3) {
-  -webkit-animation-delay: calc(var(--dir)*1s * -3);
-          animation-delay: calc(var(--dir)*1s * -3);
+  -webkit-animation-delay: calc(1s * (-3 + var(--dir)));
+          animation-delay: calc(1s * (-3 + var(--dir)));
 }
 
 .carousel__item:nth-child(4) {
-  -webkit-animation-delay: calc(var(--dir)*1s * -4);
-          animation-delay: calc(var(--dir)*1s * -4);
+  -webkit-animation-delay: calc(1s * (-4 + var(--dir)));
+          animation-delay: calc(1s * (-4 + var(--dir)));
 }
 
 .carousel.reverse-animation .carousel__item {
