@@ -71,8 +71,8 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
 }
 
 .carousel.reverse-animation .carousel__item {
-  -webkit-animation: carousel-animate-horizontal 4s cubic-bezier(0.31, -0.21, 0.72, 1.28) infinite;
-          animation: carousel-animate-horizontal 4s cubic-bezier(0.31, -0.21, 0.72, 1.28) infinite;
+  -webkit-animation: r-carousel-animate-horizontal 4s cubic-bezier(0.31, -0.21, 0.72, 1.28) infinite;
+          animation: r-carousel-animate-horizontal 4s cubic-bezier(0.31, -0.21, 0.72, 1.28) infinite;
 }
 
 .carousel__item-head {
