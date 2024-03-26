@@ -39,7 +39,7 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
 .carousel__item {
   display: flex;
   align-items: center;
-  /*position: absolute;*/
+  position: absolute;
   width: 100%;
   padding: 0 12px;
   opacity: 0;
