@@ -112,9 +112,27 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
 
 .carousel__item-body {
   width: 100%;
+  height: 120%;
   background-color: #fff;
   border-radius: 8px;
   padding: 16px 20px 16px 70px;
+}
+
+.arrow-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #333;
+  color: white;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  z-index: 999;
 }
 
 .title {
