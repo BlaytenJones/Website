@@ -70,6 +70,26 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
           animation-delay: calc(1s * -4);
 }
 
+.carousel.reverse-animation .carousel__item:nth-child(1) {
+  -webkit-animation-delay: calc(1s * -1);
+          animation-delay: calc(1s * -1);
+}
+
+.carousel.reverse-animation .carousel__item:nth-child(2) {
+  -webkit-animation-delay: calc(1s * -2);
+          animation-delay: calc(1s * -2);
+}
+
+.carousel.reverse-animation .carousel__item:nth-child(3) {
+  -webkit-animation-delay: calc(1s * -3);
+          animation-delay: calc(1s * -3);
+}
+
+.carousel.reverse-animation .carousel__item:nth-child(4) {
+  -webkit-animation-delay: calc(1s * -4);
+          animation-delay: calc(1s * -4);
+}
+
 .carousel.reverse-animation .carousel__item {
   -webkit-animation: r-carousel-animate-horizontal 4s cubic-bezier(0.31, -0.21, 0.72, 1.28) infinite;
           animation: r-carousel-animate-horizontal 4s cubic-bezier(0.31, -0.21, 0.72, 1.28) infinite;
