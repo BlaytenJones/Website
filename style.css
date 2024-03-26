@@ -5,6 +5,8 @@
 
 body {
   background: linear-gradient(45deg, #170653, #050830);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
   font-family: "Work Sans", sans-serif;
@@ -39,7 +41,7 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
   display: flex;
   align-items: center;
   position: absolute;
-  width: 100%;
+  width: 90%;
   padding: 0 12px;
   opacity: 0;
   filter: drop-shadow(0 2px 2px #555);
@@ -112,7 +114,6 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
 
 .carousel__item-body {
   width: 100%;
-  height: 120%;
   background-color: #fff;
   border-radius: 8px;
   padding: 16px 20px 16px 70px;
