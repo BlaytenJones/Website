@@ -73,8 +73,7 @@
 
                 function moveForward() {
                     carousel.classList.remove('paused');
-                    carousel.classList.remove('r-carousel-animate-horizontal');
-                    carousel.classList.add('carousel-animate-horizontal');
+                    carousel.classList.remove('reverse-animation');
                     setTimeout(function(){
                         carousel.classList.add('paused');
                     }, 1000);
@@ -82,8 +81,7 @@
 
                 function moveBackward() {
                     carousel.classList.remove('paused');
-                    carousel.classList.remove('carousel-animate-horizontal');
-                    carousel.classList.add('r-carousel-animate-horizontal');
+                    carousel.classList.add('reverse-animation');
                     setTimeout(function(){
                         carousel.classList.add('paused');
                     }, 1000);
