@@ -47,29 +47,29 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
   will-change: transform, opacity;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-  --dir: 1;
+  --dir: 0;
   -webkit-animation: carousel-animate-horizontal 4s cubic-bezier(0.31, -0.21, 0.72, 1.28) infinite;
           animation: carousel-animate-horizontal 4s cubic-bezier(0.31, -0.21, 0.72, 1.28) infinite;
 }
 
 .carousel__item:nth-child(1) {
-  -webkit-animation-delay: calc(1s * (-1 + var(--dir)));
-          animation-delay: calc(1s * (-1 + var(--dir)));
+  -webkit-animation-delay: calc(1s * -1 - 5s * var(--dir));
+          animation-delay: calc(1s * -1 - 5s * var(--dir));
 }
 
 .carousel__item:nth-child(2) {
-  -webkit-animation-delay: calc(1s * (-2 + var(--dir)));
-          animation-delay: calc(1s * (-2 + var(--dir)));
+  -webkit-animation-delay: calc(1s * -2 - 4s * var(--dir));
+          animation-delay: calc(1s * -2 - 4s * var(--dir));
 }
 
 .carousel__item:nth-child(3) {
-  -webkit-animation-delay: calc(1s * (-3 + var(--dir)));
-          animation-delay: calc(1s * (-3 + var(--dir)));
+  -webkit-animation-delay: calc(1s * -3 - 3s * var(--dir));
+          animation-delay: calc(1s * -3 - 3s * var(--dir));
 }
 
 .carousel__item:nth-child(4) {
-  -webkit-animation-delay: calc(1s * (-4 + var(--dir)));
-          animation-delay: calc(1s * (-4 + var(--dir)));
+  -webkit-animation-delay: calc(1s * -4 - 2s * var(--dir));
+          animation-delay: calc(1s * -4 - 2s * var(--dir));
 }
 
 .carousel.reverse-animation .carousel__item {
