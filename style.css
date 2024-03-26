@@ -13,6 +13,10 @@ body {
   font-weight: 400;
 }
 
+.large-gap {
+  margin-bottom: 120px;
+}
+
 h1 {color:rgb(212, 212, 222); font-size: xx-large;}
 
 .container {
@@ -105,6 +109,7 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
   padding: 14px;
   position: relative;
   margin-right: -45px;
+  margin-bottom: 200px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -114,6 +119,7 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
 
 .carousel__item-body {
   width: 100%;
+  height: 600px;
   background-color: #fff;
   border-radius: 8px;
   padding: 16px 20px 16px 70px;
