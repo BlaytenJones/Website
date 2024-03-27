@@ -5,8 +5,9 @@
 
 body {
     font-family: 'UniSansHeavy', Arial, sans-serif;
-    background-image: linear-gradient(#192124, #12192b);
+    background: linear-gradient(45deg, #192124, #12192b);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
 }

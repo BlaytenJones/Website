@@ -82,8 +82,8 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
 }
 
 .carousel.reverse-animation .carousel__item:nth-child(2) {
-  -webkit-animation-delay: calc(1s * -4);
-          animation-delay: calc(1s * -4);
+  -webkit-animation-delay: calc(1s * -2);
+          animation-delay: calc(1s * -2);
 }
 
 .carousel.reverse-animation .carousel__item:nth-child(3) {
@@ -92,8 +92,8 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
 }
 
 .carousel.reverse-animation .carousel__item:nth-child(4) {
-  -webkit-animation-delay: calc(1s * -2);
-          animation-delay: calc(1s * -2);
+  -webkit-animation-delay: calc(1s * -4);
+          animation-delay: calc(1s * -4);
 }
 
 .carousel.reverse-animation .carousel__item {
