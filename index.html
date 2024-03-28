@@ -68,16 +68,30 @@
                 }
 
                 function moveForward() {
+                    const carouselItems = document.querySelectorAll('.carousel__item');
+                    carouselItems.forEach((item, index) => {
+                        // Calculate the delay for each item
+                        const delay = `${index * -1}s`;
+                        // Toggle the animation properties
+                        item.style.remove('reverse-animation');
+                        item.style.animationDelay = delay;
+                      });
                     carousel.classList.remove('paused');
-                    carousel.classList.remove('reverse-animation');
                     setTimeout(function(){
                         carousel.classList.add('paused');
                     }, 1000);
                 }
 
                 function moveBackward() {
+                    const carouselItems = document.querySelectorAll('.carousel__item');
+                    carouselItems.forEach((item, index) => {
+                        // Calculate the delay for each item
+                        const delay = `${index * -1}s`;
+                        // Toggle the animation properties
+                        item.style.add('reverse-animation');
+                        item.style.animationDelay = delay;
+                      });
                     carousel.classList.remove('paused');
-                    carousel.classList.add('reverse-animation');
                     setTimeout(function(){
                         carousel.classList.add('paused');
                     }, 1000);
