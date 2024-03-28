@@ -70,17 +70,15 @@
                 function moveForward() {
                     carousel.classList.remove('reverse-animation');
                     carousel.classList.remove('paused');
-                    setTimeout(function(){
-                        carousel.classList.add('paused');
-                    }, 1000);
+                    void carousel.classList.offsetWidth;
+                    carousel.classList.add('paused');
                 }
 
                 function moveBackward() {
                     carousel.classList.add('reverse-animation');
                     carousel.classList.remove('paused');
-                    setTimeout(function(){
-                        carousel.classList.add('paused');
-                    }, 1000);
+                    void carousel.classList.offsetWidth;
+                    carousel.classList.add('paused');
                 }
                 
                 const nextButton = document.getElementById('rightButton');
