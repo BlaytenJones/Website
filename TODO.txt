@@ -22,7 +22,7 @@ UP-NEXT:
 [Go] VIDEO COMPRESSION
 [C++] POROUS MEDIUM EQUATION USING THE BARENBLATT-KOMPANEETS-ZELDOVICH SIMILARITY SOLUTION AND ITS APPLICATION TO GAS FLOW (https://en.wikipedia.org/wiki/Porous_medium_equation) (https://userpages.umbc.edu/~rostamia/cbook/)
 [Javascript, Python] BROWSER PLUGIN WITH BEAUTIFULSOUP
-[C] AUTONOMOUS CAR USING EMBEDDED SYSTEMS
+[C, Physical] AUTONOMOUS CAR USING EMBEDDED SYSTEMS
 [Java] BRAIN WAVE READER PROGRAM
 [Angular, Go] REAL TIME CHAT APPLICATION (https://www.thepolyglotdeveloper.com/2016/12/create-real-time-chat-app-golang-angular-2-websockets/)
 [C++] WEBSCRAPER FROM SCRATCH
