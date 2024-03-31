@@ -50,7 +50,7 @@ h1 {
 
 .left {
     border-right: 1px solid #ccc;
-    height: 880px;
+    height: 1530px;
 }
 
 .project-image {
@@ -63,7 +63,7 @@ h1 {
 .upper{
     background-color: #2d6a2f;
     color: #104212;
-    height: 520px;
+    height: 770px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0);
     border-radius: 8px;
@@ -71,11 +71,11 @@ h1 {
 .lower {
     background-color: #993227;
     color: #57110a;
-    height: 520px;
+    height: 770px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0);
     border-radius: 8px;
-    margin-top: 8px;
+    margin-top: 16px;
 }
 
 .right {
