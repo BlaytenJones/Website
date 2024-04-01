@@ -104,25 +104,25 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
 
 /*Transition Graph: (...A<->C<->D<->B<->A<->C<->D<->B<->A...)*/
 .carousel.stateA .carousel__item {
-  transform: translateX(0) scale(1);
+  transform: translateX(0%) scale(1);
   opacity: 1;
   visibility: visible;
 }
 
 .carousel.stateB .carousel__item {
-  transform: translateX(-100) scale(0.7);
+  transform: translateX(-100%) scale(0.7);
   opacity: 0.4;
   visibility: visible;
 }
 
 .carousel.stateC .carousel__item {
-  transform: translateX(100) scale(0.7);
+  transform: translateX(100%) scale(0.7);
   opacity: 0.4;
   visibility: visible;
 }
 
 .carousel.stateD .carousel__item {
-  transform: translateX(0) scale(0.5);
+  transform: translateX(0%) scale(0.5);
   opacity: 0;
   visibility: visible;
 }
