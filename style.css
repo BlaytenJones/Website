@@ -174,3 +174,47 @@ h1 {
       transform: translateY(0);
   }
 }
+
+/*Code adapted from https://www.coding-dude.com/wp/css/css-star/ four point star*/
+
+.four-pointed-star{
+  position:relative;
+  margin:1px auto;
+  width:1px;
+  font-size:1px;
+  animation-name: rotateAnimation;
+  animation-duration: 1ms; /* Firefox requires this to apply the animation */
+  animation-direction: alternate;
+  animation-timeline: scroll(block nearest);
+}
+
+.four-pointed-star:before{
+  content:"";
+  position:absolute;
+  background:rgb(255, 244, 180);
+  width:20px;
+  height:23px;
+  transform:rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+  border-radius: 10%;
+}
+
+.four-pointed-star:after{
+  content:"";
+  position:absolute;
+  background:rgb(255, 244, 180);
+  width:20px;
+  height:23px;
+  transform:rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+  border-radius: 10%;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
