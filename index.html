@@ -65,49 +65,39 @@
                 const carousel = document.querySelector('.carousel');
 
                 function moveForward() {
-                    switch(true){
-                        case carousel.children.contains('stateA'):
-                            carousel.children.remove('stateA');
-                            carousel.children.add('stateC');
-                            break;
-                        case carousel.children.contains('stateB'):
-                            carousel.children.remove('stateB');
-                            carousel.children.add('stateA');
-                            break;
-                        case carousel.children.contains('stateC'):
-                            carousel.children.remove('stateC');
-                            carousel.children.add('stateD');
-                            break;
-                        case carousel.children.contains('stateD'):
-                            carousel.children.remove('stateD');
-                            carousel.children.add('stateB');
-                            break;
-                        default:
-                            break;
-                    }
+                    Array.from(carousel.children).forEach(item => {
+                        if (item.classList.contains('stateA')) {
+                            item.classList.remove('stateA');
+                            item.classList.add('stateC');
+                        } else if (item.classList.contains('stateB')) {
+                            item.classList.remove('stateB');
+                            item.classList.add('stateA');
+                        } else if (item.classList.contains('stateC')) {
+                            item.classList.remove('stateC');
+                            item.classList.add('stateD');
+                        } else if (item.classList.contains('stateD')) {
+                            item.classList.remove('stateD');
+                            item.classList.add('stateB');
+                        }
+                    });
                 }
-
+            
                 function moveBackward() {
-                    switch(true){
-                        case carousel.children.contains('stateA'):
-                            carousel.children.remove('stateA');
-                            carousel.children.add('stateB');
-                            break;
-                        case carousel.children.contains('stateB'):
-                            carousel.children.remove('stateB');
-                            carousel.children.add('stateD');
-                            break;
-                        case carousel.children.contains('stateC'):
-                            carousel.children.remove('stateC');
-                            carousel.children.add('stateA');
-                            break;
-                        case carousel.children.contains('stateD'):
-                            carousel.children.remove('stateD');
-                            carousel.children.add('stateC');
-                            break;
-                        default:
-                            break;
-                    }
+                    Array.from(carousel.children).forEach(item => {
+                        if (item.classList.contains('stateA')) {
+                            item.classList.remove('stateA');
+                            item.classList.add('stateB');
+                        } else if (item.classList.contains('stateB')) {
+                            item.classList.remove('stateB');
+                            item.classList.add('stateD');
+                        } else if (item.classList.contains('stateC')) {
+                            item.classList.remove('stateC');
+                            item.classList.add('stateA');
+                        } else if (item.classList.contains('stateD')) {
+                            item.classList.remove('stateD');
+                            item.classList.add('stateC');
+                        }
+                    });
                 }
                 
                 const nextButton = document.getElementById('rightButton');
