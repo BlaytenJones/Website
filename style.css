@@ -52,53 +52,6 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
   will-change: transform, opacity;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-  -webkit-animation: carousel-animate-horizontal 4s ease-in-out infinite;
-          animation: carousel-animate-horizontal 4s ease-in-out infinite;
-}
-
-.carousel__item:nth-child(1) {
-  -webkit-animation-delay: calc(1s * 0);
-          animation-delay: calc(1s * 0);
-}
-
-.carousel__item:nth-child(2) {
-  -webkit-animation-delay: calc(1s * 1);
-          animation-delay: calc(1s * 1);
-}
-
-.carousel__item:nth-child(3) {
-  -webkit-animation-delay: calc(1s * 2);
-          animation-delay: calc(1s * 2);
-}
-
-.carousel__item:nth-child(4) {
-  -webkit-animation-delay: calc(1s * 3);
-          animation-delay: calc(1s * 3);
-}
-
-.carousel.reverse-animation .carousel__item:nth-child(1) {
-  -webkit-animation-delay: calc(1s * 0);
-          animation-delay: calc(1s * 0);
-}
-
-.carousel.reverse-animation .carousel__item:nth-child(2) {
-  -webkit-animation-delay: calc(1s * 1);
-          animation-delay: calc(1s * 1);
-}
-
-.carousel.reverse-animation .carousel__item:nth-child(3) {
-  -webkit-animation-delay: calc(1s * 2);
-          animation-delay: calc(1s * 2);
-}
-
-.carousel.reverse-animation .carousel__item:nth-child(4) {
-  -webkit-animation-delay: calc(1s * 3);
-          animation-delay: calc(1s * 3);
-}
-
-.carousel.reverse-animation .carousel__item {
-  -webkit-animation: r-carousel-animate-horizontal 4s ease-in-out infinite;
-          animation: r-carousel-animate-horizontal 4s ease-in-out infinite;
 }
 
 .carousel__item-head {
@@ -149,116 +102,29 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
   margin-top: 10px;
 }
 
-@-webkit-keyframes carousel-animate-horizontal {
-  0% {
-    transform: translateX(100%) scale(0.5);
-    opacity: 0;
-    visibility: hidden;
-  }
-  3%, 25% {
-    transform: translateX(100%) scale(0.7);
-    opacity: 0.4;
-    visibility: visible;
-  }
-  28%, 50% {
-    transform: translateX(0) scale(1);
-    opacity: 1;
-    visibility: visible;
-  }
-  53%, 75% {
-    transform: translateX(-100%) scale(0.7);
-    opacity: 0.4;
-    visibility: visible;
-  }
-  78%, 100% {
-    transform: translateX(-100%) scale(0.5);
-    opacity: 0;
-    visibility: visible;
-  }
+/*Transition Graph: (...A<->C<->D<->B<->A<->C<->D<->B<->A...)*/
+.carousel.stateA .carousel__item {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+  visibility: visible;
 }
 
-@keyframes carousel-animate-horizontal {
-  0% {
-    transform: translateX(100%) scale(0.5);
-    opacity: 0;
-    visibility: hidden;
-  }
-  3%, 25% {
-    transform: translateX(100%) scale(0.7);
-    opacity: 0.4;
-    visibility: visible;
-  }
-  28%, 50% {
-    transform: translateX(0) scale(1);
-    opacity: 1;
-    visibility: visible;
-  }
-  53%, 75% {
-    transform: translateX(-100%) scale(0.7);
-    opacity: 0.4;
-    visibility: visible;
-  }
-  78%, 100% {
-    transform: translateX(-100%) scale(0.5);
-    opacity: 0;
-    visibility: visible;
-  }
+.carousel.stateB .carousel__item {
+  transform: translateX(-100) scale(0.7);
+  opacity: 0.4;
+  visibility: visible;
 }
 
-@-webkit-keyframes r-carousel-animate-horizontal {
-  0% {
-    transform: translateX(-100%) scale(0.5);
-    opacity: 0;
-    visibility: hidden;
-  }
-  3%, 25% {
-    transform: translateX(-100%) scale(0.7);
-    opacity: 0.4;
-    visibility: visible;
-  }
-  28%, 50% {
-    transform: translateX(0) scale(1);
-    opacity: 1;
-    visibility: visible;
-  }
-  53%, 75% {
-    transform: translateX(100%) scale(0.7);
-    opacity: 0.4;
-    visibility: visible;
-  }
-  78%, 100% {
-    transform: translateX(100%) scale(0.5);
-    opacity: 0;
-    visibility: visible;
-  }
+.carousel.stateC .carousel__item {
+  transform: translateX(100) scale(0.7);
+  opacity: 0.4;
+  visibility: visible;
 }
 
-@keyframes r-carousel-animate-horizontal {
-  0% {
-    transform: translateX(-100%) scale(0.5);
-    opacity: 0;
-    visibility: hidden;
-  }
-  3%, 25% {
-    transform: translateX(-100%) scale(0.7);
-    opacity: 0.4;
-    visibility: visible;
-  }
-  28%, 50% {
-    transform: translateX(0) scale(1);
-    opacity: 1;
-    visibility: visible;
-  }
-  53%, 75% {
-    transform: translateX(100%) scale(0.7);
-    opacity: 0.4;
-    visibility: visible;
-  }
-  78%, 100% {
-    transform: translateX(100%) scale(0.5);
-    opacity: 0;
-    visibility: visible;
-  }
+.carousel.stateD .carousel__item {
+  transform: translateX(0) scale(0.5);
+  opacity: 0;
+  visibility: visible;
 }
 
 .carousel.paused .carousel__item {

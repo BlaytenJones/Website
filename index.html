@@ -60,33 +60,60 @@
             </a>
         </div>
         <script>
+            /*Transition Graph: (...A<->C<->D<->B<->A<->C<->D<->B<->A...)*/
             document.addEventListener("DOMContentLoaded", function() {
                 const carousel = document.querySelector('.carousel');
 
-                function stopMove() {
-                    carousel.classList.add('paused');
-                }
-
                 function moveForward() {
-                    carousel.classList.remove('reverse-animation');
-                    carousel.classList.remove('paused');
-                    void carousel.classList.offsetWidth;
-                    carousel.classList.add('paused');
+                    switch(true){
+                        case carousel.classList.contains('stateA'):
+                            carousel.classList.remove('stateA');
+                            carousel.classList.add('stateC');
+                            break;
+                        case carousel.classList.contains('stateB'):
+                            carousel.classList.remove('stateB');
+                            carousel.classList.add('stateA');
+                            break;
+                        case carousel.classList.contains('stateC'):
+                            carousel.classList.remove('stateC');
+                            carousel.classList.add('stateD');
+                            break;
+                        case carousel.classList.contains('stateD'):
+                            carousel.classList.remove('stateD');
+                            carousel.classList.add('stateB');
+                            break;
+                        default:
+                            break;
+                    }
                 }
 
                 function moveBackward() {
-                    carousel.classList.add('reverse-animation');
-                    carousel.classList.remove('paused');
-                    void carousel.classList.offsetWidth;
-                    carousel.classList.add('paused');
+                    switch(true){
+                        case carousel.classList.contains('stateA'):
+                            carousel.classList.remove('stateA');
+                            carousel.classList.add('stateB');
+                            break;
+                        case carousel.classList.contains('stateB'):
+                            carousel.classList.remove('stateB');
+                            carousel.classList.add('stateD');
+                            break;
+                        case carousel.classList.contains('stateC'):
+                            carousel.classList.remove('stateC');
+                            carousel.classList.add('stateA');
+                            break;
+                        case carousel.classList.contains('stateD'):
+                            carousel.classList.remove('stateD');
+                            carousel.classList.add('stateC');
+                            break;
+                        default:
+                            break;
+                    }
                 }
                 
                 const nextButton = document.getElementById('rightButton');
                 const prevButton = document.getElementById('leftButton');
               
-                nextButton.addEventListener('click', stopMove);
                 nextButton.addEventListener('click', moveForward);
-                prevButton.addEventListener('click', stopMove);
                 prevButton.addEventListener('click', moveBackward);
               });
         </script>
