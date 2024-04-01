@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'UniSansHeavy';
+  src: url('Uni Sans Heavy.otf') format('opentype');
+}
+
 body {
   background: linear-gradient(45deg, #170653, #050830);
   background-repeat: no-repeat;
@@ -17,7 +22,11 @@ body {
   margin-bottom: 320px;
 }
 
-h1 {color:rgb(212, 212, 222); font-size: xx-large;}
+h1 {
+  color:rgb(212, 212, 222);
+  font-size: xx-large;
+  font-family: 'UniSansHeavy', Arial, sans-serif;
+}
 
 .container {
   display: flex;
@@ -55,7 +64,7 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
 
 .carousel__item-head {
   border-radius: 50%;
-  background-color: #3f6eb6;
+  background: linear-gradient(45deg, #3f6eb6, #27418d);
   color:rgb(255, 255, 255);
   width: 90px;
   height: 90px;
@@ -72,8 +81,15 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
 
 .carousel__item-body {
   width: 100%;
+  font-family: 'UniSansHeavy', Arial, sans-serif;
   height: 480px;
-  background-color: #fff;
+  background: repeating-linear-gradient(
+    -45deg,
+    #ffffff,
+    #ffffff 10px,
+    #f9faff 10px,
+    #f9faff 20px
+  );
   border-radius: 8px;
   padding: 16px 20px 16px 70px;
 }
@@ -86,7 +102,7 @@ h1 {color:rgb(212, 212, 222); font-size: xx-large;}
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 100%;
-  background-color: #3f6eb6;
+  background: linear-gradient(45deg, #3f6eb6, #27418d);
   color: white;
   font-size: 50px;
   line-height: 68px;
