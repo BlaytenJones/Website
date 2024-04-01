@@ -66,21 +66,21 @@
 
                 function moveForward() {
                     switch(true){
-                        case carousel.classList.contains('stateA'):
-                            carousel.classList.remove('stateA');
-                            carousel.classList.add('stateC');
+                        case carousel.children.contains('stateA'):
+                            carousel.children.remove('stateA');
+                            carousel.children.add('stateC');
                             break;
-                        case carousel.classList.contains('stateB'):
-                            carousel.classList.remove('stateB');
-                            carousel.classList.add('stateA');
+                        case carousel.children.contains('stateB'):
+                            carousel.children.remove('stateB');
+                            carousel.children.add('stateA');
                             break;
-                        case carousel.classList.contains('stateC'):
-                            carousel.classList.remove('stateC');
-                            carousel.classList.add('stateD');
+                        case carousel.children.contains('stateC'):
+                            carousel.children.remove('stateC');
+                            carousel.children.add('stateD');
                             break;
-                        case carousel.classList.contains('stateD'):
-                            carousel.classList.remove('stateD');
-                            carousel.classList.add('stateB');
+                        case carousel.children.contains('stateD'):
+                            carousel.children.remove('stateD');
+                            carousel.children.add('stateB');
                             break;
                         default:
                             break;
@@ -89,21 +89,21 @@
 
                 function moveBackward() {
                     switch(true){
-                        case carousel.classList.contains('stateA'):
-                            carousel.classList.remove('stateA');
-                            carousel.classList.add('stateB');
+                        case carousel.children.contains('stateA'):
+                            carousel.children.remove('stateA');
+                            carousel.children.add('stateB');
                             break;
-                        case carousel.classList.contains('stateB'):
-                            carousel.classList.remove('stateB');
-                            carousel.classList.add('stateD');
+                        case carousel.children.contains('stateB'):
+                            carousel.children.remove('stateB');
+                            carousel.children.add('stateD');
                             break;
-                        case carousel.classList.contains('stateC'):
-                            carousel.classList.remove('stateC');
-                            carousel.classList.add('stateA');
+                        case carousel.children.contains('stateC'):
+                            carousel.children.remove('stateC');
+                            carousel.children.add('stateA');
                             break;
-                        case carousel.classList.contains('stateD'):
-                            carousel.classList.remove('stateD');
-                            carousel.classList.add('stateC');
+                        case carousel.children.contains('stateD'):
+                            carousel.children.remove('stateD');
+                            carousel.children.add('stateC');
                             break;
                         default:
                             break;
