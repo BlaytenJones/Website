@@ -24,6 +24,7 @@ UP-NEXT:
 [Javascript, Python] BROWSER PLUGIN WITH BEAUTIFULSOUP
 [C, Physical] AUTONOMOUS CAR USING EMBEDDED SYSTEMS
 [Java] BRAIN WAVE READER PROGRAM
+[CSS, HTML, Java, PHP, Angular] CREATE TAMAGOTCHI WEBBROWSER PET
 [Angular, Go] REAL TIME CHAT APPLICATION (https://www.thepolyglotdeveloper.com/2016/12/create-real-time-chat-app-golang-angular-2-websockets/)
 [C++] WEBSCRAPER FROM SCRATCH
 [Cs] BIOLOGY PREDICTION SIMULATOR BASED ON VIRUS DNA USING BLOOM FILTER AND K-MERS
@@ -51,9 +52,9 @@ UP-NEXT:
 [Rust] GARBAGE COLLECTOR
 [Verilog] VERILOG PONG
 [Python] SONG RECOMMENDER (https://towardsdatascience.com/how-to-build-a-simple-song-recommender-296fcbc8c85)
-[C] CREATE OWN SHELL
+[ASM, C] CREATE OWN SHELL
 [C++] CREATE CMD TERMINAL
-[C++] CREATE OS
+[ASM, C++] CREATE OS
 [Java] NOSQL DATABASE WITH API (https://betterprogramming.pub/build-a-nosql-database-from-the-scratch-in-1000-lines-of-code-8ed1c15ed924)
 [Python] PACKET SNIFFER
 [Verilog] VERILOG GAMEBOY
