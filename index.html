@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="full-width-image">
-            <img src="circuit.jpeg" alt="circuit">
+            <img id="blurry-image" src="circuit.jpeg" alt="circuit">
         </div>
         <div class="large-gap"></div>
         <div class="four-pointed-star"></div>
@@ -64,6 +64,12 @@
         </div>
         
         <script>
+            window.addEventListener('scroll', function() {
+                var scrollTop = window.scrollY;
+                var blurAmount = scrollTop / 50; // Adjust this value for the blur intensity
+                document.getElementById('blurry-image').style.filter = 'blur(' + blurAmount + 'px)';
+            });
+            
             /*Transition Graph: (...A<->C<->D<->B<->A<->C<->D<->B<->A...)*/
             document.addEventListener("DOMContentLoaded", function() {
                 const carousel = document.querySelector('.carousel');
