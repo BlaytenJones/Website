@@ -65,6 +65,14 @@
         </div>
         
         <script>
+            window.addEventListener('resize', function() {
+                var imageHeight = document.querySelector('.full-width-image img').clientHeight;
+                var overlayHeight = imageHeight * 0.2;
+                document.querySelector('.fade-overlay').style.height = overlayHeight + 'px';
+              });
+              
+              window.dispatchEvent(new Event('resize'));
+
             window.addEventListener('scroll', function() {
                 var scrollTop = window.scrollY;
                 var blurAmount = scrollTop / 50; // Adjust this value for the blur intensity
