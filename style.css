@@ -18,6 +18,12 @@ body {
   font-weight: 400;
 }
 
+a:link {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+
 .large-gap {
   margin-bottom: 320px;
 }
