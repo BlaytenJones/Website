@@ -13,8 +13,7 @@
         <ul id="repo-list"></ul>
         <script src="https://cdn.jsdelivr.net/npm/@octokit/core@latest/dist/index.js"></script>
         <script>
-            const { Octokit } = require("@octokit/core");
-            const octokit = new Octokit();
+            const octokit = new window.Octokit();
             async function fetchRepositories(username) {
                 try {
                     const response = await octokit.request('GET /users/{username}/repos', {
