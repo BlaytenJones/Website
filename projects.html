@@ -18,10 +18,22 @@
             const repos = await response.json();
             console.log("Repositories:", repos);
             const repoList = document.getElementById('repo-list');
-            repos.forEach(repo => {
+            repos.forEach(async repo => {
                 const li = document.createElement('li');
                 li.textContent = repo.full_name;
                 repoList.appendChild(li);
+
+                const contentsResponse = await fetch(`https://api.github.com/repos/${repo.full_name}/contents`);
+                const contents = await contentsResponse.json();
+                const folders = contents.filter(content => content.type === 'dir');
+
+                const folderList = document.createElement('ul');
+                folders.forEach(folder => {
+                    const folderItem = document.createElement('li');
+                    folderItem.textContent = folder.name;
+                    folderList.appendChild(folderItem);
+                });
+                li.appendChild(folderList);
             });
         } catch (error) {
             console.error('Error fetching repositories:', error);
