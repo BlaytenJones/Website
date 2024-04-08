@@ -11,18 +11,32 @@
     <body>
         <h1>My Repositories</h1>
         <ul id="repo-list"></ul>
-        <script src="https://cdn.jsdelivr.net/npm/@octokit/core@latest/dist/index.js"></script>
         <script>
-            const octokit = new Octokit();
+            // Define the function to fetch repositories
             async function fetchRepositories(username) {
                 try {
+                    // Load Octokit.js dynamically
+                    const script = document.createElement('script');
+                    script.src = "https://cdn.jsdelivr.net/npm/@octokit/core@latest/dist/index.js";
+                    document.body.appendChild(script);
+    
+                    // Wait for the script to load
+                    await new Promise((resolve, reject) => {
+                        script.onload = resolve;
+                        script.onerror = reject;
+                    });
+    
+                    // Octokit is now available
+                    const octokit = new Octokit();
+    
+                    // Fetch repositories
                     const response = await octokit.request('GET /users/{username}/repos', {
                         username: username
                     });
-
+    
                     const repos = response.data;
                     const repoList = document.getElementById('repo-list');
-
+    
                     repos.forEach(repo => {
                         const li = document.createElement('li');
                         li.textContent = repo.full_name;
@@ -32,7 +46,9 @@
                     console.error('Error fetching repositories:', error);
                 }
             }
+    
+            // Call the function with your GitHub username
             fetchRepositories('BlaytenJones');
         </script>
     </body>
-</html>
+    </html>
