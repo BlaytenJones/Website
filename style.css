@@ -8,7 +8,14 @@
   src: url('Uni Sans Heavy.otf') format('opentype');
 }
 
-body{
+.titleHeader {
+  mix-blend-mode: hard-light;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 450;
+  font-size: 100px;
+}
+
+body {
   background-image: url("circuit.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -268,8 +275,8 @@ h1 {
 }
 .fade-overlay {
   position: absolute;
-  bottom: 0;
   width: 100%;
+  margin-top: -165px;
   height: 20%;
   background: linear-gradient(to bottom, rgba(255,255,255,0), rgb(16 7 70));
   pointer-events: none;
