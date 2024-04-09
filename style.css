@@ -11,12 +11,15 @@
 .titleHeader {
   font-family: 'UniSansHeavy', "Work Sans", sans-serif;
   font-weight: 450;
-  font-size: 100px;
-  color:#5587d1;
-  position: absolute;
-  margin-top: -200px;
+  font-size: 150px;
+  width: 100%;
+  color:#ffffff;
+  position: fixed;
+  margin-top: -400px;
   text-align: center;
-  z-index: 10;
+  z-index: -10;
+  text-shadow: -5px 4px 1px #050830, 0 0 1em white;
+  text-underline-offset: 33px;
 }
 
 body {
