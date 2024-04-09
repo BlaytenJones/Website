@@ -63,7 +63,7 @@ h1 {
 }
 
 .upper{
-    background-color: #2d6a2f;
+    background: linear-gradient(45deg, #125e31, #3d9140);
     color: #104212;
     height: 770px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
@@ -71,7 +71,7 @@ h1 {
     border-radius: 8px;
 }
 .lower {
-    background-color: #993227;
+    background: linear-gradient(45deg, #993227, #7d251b);
     color: #57110a;
     height: 770px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
