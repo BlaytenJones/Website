@@ -9,12 +9,13 @@
 }
 
 .titleHeader {
-  mix-blend-mode: hard-light;
-  font-family: "Work Sans", sans-serif;
+  font-family: 'UniSansHeavy', "Work Sans", sans-serif;
   font-weight: 450;
   font-size: 100px;
   color:#5587d1;
-  position: relative;
+  position: absolute;
+  margin-top: -200px;
+  text-align: center;
   z-index: 10;
 }
 
