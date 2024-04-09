@@ -13,6 +13,9 @@
   font-family: "Work Sans", sans-serif;
   font-weight: 450;
   font-size: 100px;
+  color:#5587d1;
+  position: relative;
+  z-index: 10;
 }
 
 body {
