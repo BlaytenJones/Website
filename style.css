@@ -9,6 +9,7 @@
 }
 
 body{
+  background-image: url("circuit.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;

@@ -9,124 +9,120 @@
         <link rel="icon" type="image/x-icon" href="ico.png">
     </head>
     <body>
-        <div class="full-width-image">
-            <img id="blurry-image" src="circuit.jpeg" alt="circuit">
-            <div class="fade-overlay"></div>
+        <div class="bodyBox">
+            <div class="large-gap"></div>
+            <div class="four-pointed-star"></div>
+            <div class="container">
+                <a class="arrow-btn" id="leftButton">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+                <div class='wrapper'>
+                    <div class='carousel'>
+                    <a class='carousel__item stateA'>
+                        <div class='carousel__item-head'>
+                        <i class="fa fa-user"></i>
+                        </div>
+                        <div class='carousel__item-body'>
+                        <p class='title'>About Me</p>
+                        <p>AA</p>
+                        </div>
+                    </a>
+                    <a class='carousel__item stateB' href="/projects.html">
+                        <div class='carousel__item-head'>
+                        <i class="fa fa-code"></i>
+                        </div>
+                        <div class='carousel__item-body'>
+                        <p class='title'>Completed Projects</p>
+                        <p>BB</p>
+                        </div>
+                    </a>
+                    <a class='carousel__item stateC' href="/todo.html">
+                        <div class='carousel__item-head'>
+                        <i class="fa fa-check-square"></i>
+                        </div>
+                        <div class='carousel__item-body'>
+                        <p class='title'>To-Do List</p>
+                        <img class='carousel-image' src="todo.png" alt="todo list">
+                        </div>
+                    </a>
+                    <a class='carousel__item stateD' href="/College Resume.pdf">
+                        <div class='carousel__item-head'>
+                        <i class="fa fa-file"></i>
+                        </div>
+                        <div class='carousel__item-body'>
+                        <p class='title'>Resume</p>
+                        <img class='carousel-image' src="College Resume 2.0.jpg" alt="resume">
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <a class="arrow-btn" id="rightButton">
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <script>
+                window.addEventListener('resize', function() {
+                    var imageHeight = document.querySelector('.full-width-image img').clientHeight;
+                    var overlayHeight = imageHeight * 0.2;
+                    document.querySelector('.fade-overlay').style.height = overlayHeight + 'px';
+                });
+
+                window.dispatchEvent(new Event('resize'));
+
+                window.addEventListener('scroll', function() {
+                    var scrollTop = window.scrollY;
+                    var blurAmount = scrollTop / 50; // Adjust this value for the blur intensity
+                    document.getElementById('blurry-image').style.filter = 'blur(' + blurAmount + 'px)';
+                });
+                
+                /*Transition Graph: (...A<->C<->D<->B<->A<->C<->D<->B<->A...)*/
+                document.addEventListener("DOMContentLoaded", function() {
+                    const carousel = document.querySelector('.carousel');
+
+                    function moveForward() {
+                        Array.from(carousel.children).forEach(item => {
+                            if (item.classList.contains('stateA')) {
+                                item.classList.remove('stateA');
+                                item.classList.add('stateC');
+                            } else if (item.classList.contains('stateB')) {
+                                item.classList.remove('stateB');
+                                item.classList.add('stateA');
+                            } else if (item.classList.contains('stateC')) {
+                                item.classList.remove('stateC');
+                                item.classList.add('stateD');
+                            } else if (item.classList.contains('stateD')) {
+                                item.classList.remove('stateD');
+                                item.classList.add('stateB');
+                            }
+                        });
+                    }
+                
+                    function moveBackward() {
+                        Array.from(carousel.children).forEach(item => {
+                            if (item.classList.contains('stateA')) {
+                                item.classList.remove('stateA');
+                                item.classList.add('stateB');
+                            } else if (item.classList.contains('stateB')) {
+                                item.classList.remove('stateB');
+                                item.classList.add('stateD');
+                            } else if (item.classList.contains('stateC')) {
+                                item.classList.remove('stateC');
+                                item.classList.add('stateA');
+                            } else if (item.classList.contains('stateD')) {
+                                item.classList.remove('stateD');
+                                item.classList.add('stateC');
+                            }
+                        });
+                    }
+                    
+                    const nextButton = document.getElementById('rightButton');
+                    const prevButton = document.getElementById('leftButton');
+                
+                    nextButton.addEventListener('click', moveForward);
+                    prevButton.addEventListener('click', moveBackward);
+                });
+            </script>
         </div>
     </body>
-    <div class="bodyBox">
-        <div class="large-gap"></div>
-        <div class="four-pointed-star"></div>
-        <div class="container">
-            <a class="arrow-btn" id="leftButton">
-                <i class="fa fa-arrow-left"></i>
-            </a>
-            <div class='wrapper'>
-                <div class='carousel'>
-                <a class='carousel__item stateA'>
-                    <div class='carousel__item-head'>
-                    <i class="fa fa-user"></i>
-                    </div>
-                    <div class='carousel__item-body'>
-                    <p class='title'>About Me</p>
-                    <p>AA</p>
-                    </div>
-                </a>
-                <a class='carousel__item stateB' href="/projects.html">
-                    <div class='carousel__item-head'>
-                    <i class="fa fa-code"></i>
-                    </div>
-                    <div class='carousel__item-body'>
-                    <p class='title'>Completed Projects</p>
-                    <p>BB</p>
-                    </div>
-                </a>
-                <a class='carousel__item stateC' href="/todo.html">
-                    <div class='carousel__item-head'>
-                    <i class="fa fa-check-square"></i>
-                    </div>
-                    <div class='carousel__item-body'>
-                    <p class='title'>To-Do List</p>
-                    <img class='carousel-image' src="todo.png" alt="todo list">
-                    </div>
-                </a>
-                <a class='carousel__item stateD' href="/College Resume.pdf">
-                    <div class='carousel__item-head'>
-                    <i class="fa fa-file"></i>
-                    </div>
-                    <div class='carousel__item-body'>
-                    <p class='title'>Resume</p>
-                    <img class='carousel-image' src="College Resume 2.0.jpg" alt="resume">
-                    </div>
-                </a>
-                </div>
-            </div>
-            <a class="arrow-btn" id="rightButton">
-                <i class="fa fa-arrow-right"></i>
-            </a>
-        </div>
-        
-        <script>
-            window.addEventListener('resize', function() {
-                var imageHeight = document.querySelector('.full-width-image img').clientHeight;
-                var overlayHeight = imageHeight * 0.2;
-                document.querySelector('.fade-overlay').style.height = overlayHeight + 'px';
-              });
-
-              window.dispatchEvent(new Event('resize'));
-
-            window.addEventListener('scroll', function() {
-                var scrollTop = window.scrollY;
-                var blurAmount = scrollTop / 50; // Adjust this value for the blur intensity
-                document.getElementById('blurry-image').style.filter = 'blur(' + blurAmount + 'px)';
-            });
-            
-            /*Transition Graph: (...A<->C<->D<->B<->A<->C<->D<->B<->A...)*/
-            document.addEventListener("DOMContentLoaded", function() {
-                const carousel = document.querySelector('.carousel');
-
-                function moveForward() {
-                    Array.from(carousel.children).forEach(item => {
-                        if (item.classList.contains('stateA')) {
-                            item.classList.remove('stateA');
-                            item.classList.add('stateC');
-                        } else if (item.classList.contains('stateB')) {
-                            item.classList.remove('stateB');
-                            item.classList.add('stateA');
-                        } else if (item.classList.contains('stateC')) {
-                            item.classList.remove('stateC');
-                            item.classList.add('stateD');
-                        } else if (item.classList.contains('stateD')) {
-                            item.classList.remove('stateD');
-                            item.classList.add('stateB');
-                        }
-                    });
-                }
-            
-                function moveBackward() {
-                    Array.from(carousel.children).forEach(item => {
-                        if (item.classList.contains('stateA')) {
-                            item.classList.remove('stateA');
-                            item.classList.add('stateB');
-                        } else if (item.classList.contains('stateB')) {
-                            item.classList.remove('stateB');
-                            item.classList.add('stateD');
-                        } else if (item.classList.contains('stateC')) {
-                            item.classList.remove('stateC');
-                            item.classList.add('stateA');
-                        } else if (item.classList.contains('stateD')) {
-                            item.classList.remove('stateD');
-                            item.classList.add('stateC');
-                        }
-                    });
-                }
-                
-                const nextButton = document.getElementById('rightButton');
-                const prevButton = document.getElementById('leftButton');
-              
-                nextButton.addEventListener('click', moveForward);
-                prevButton.addEventListener('click', moveBackward);
-              });
-        </script>
-    </div>
 </html>
