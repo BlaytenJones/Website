@@ -17,6 +17,7 @@ ul {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 999;
 }
 
 li {
@@ -24,6 +25,7 @@ li {
 }
 
 li a {
+  font-family: 'UniSansHeavy', "Work Sans", sans-serif;
   display: block;
   color: white;
   text-align: center;
@@ -32,11 +34,11 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
+  background-color: #484e80;
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: #0444aa;
 }
 
 .titleHeader {
@@ -190,7 +192,7 @@ h1 {
   text-align: center;
   cursor: pointer;
   border: none;
-  z-index: 999;
+  z-index: 998;
   margin-top: 290px;
 }
 
