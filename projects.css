@@ -1,14 +1,20 @@
 @font-face {
-    font-family: 'UniSansHeavy';
-    src: url('Uni Sans Heavy.otf') format('opentype');
-  }
+  font-family: 'UniSansHeavy';
+  src: url('Uni Sans Heavy.otf') format('opentype');
+}
   
-  body {
-    background: linear-gradient(45deg, #170653, #050830);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
-    font-family: "Work Sans", sans-serif;
-    font-weight: 400;
-  }
+body {
+  background: linear-gradient(45deg, #170653, #050830);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  color:rgb(212, 212, 222);
+  font-size: xx-large;
+  font-family: 'UniSansHeavy', Arial, sans-serif;
+}
