@@ -71,6 +71,17 @@
             </div>
             
             <script>
+                const navbarLinks = document.querySelectorAll('.navText');
+                function handleNavClick(event) {
+                    navbarLinks.forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    event.target.classList.add('active');
+                }
+                navbarLinks.forEach(link => {
+                    link.addEventListener('click', handleNavClick);
+                });
+
                 /*Transition Graph: (...A<->C<->D<->B<->A<->C<->D<->B<->A...)*/
                 document.addEventListener("DOMContentLoaded", function() {
                     const carousel = document.querySelector('.carousel');
