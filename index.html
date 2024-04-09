@@ -62,6 +62,14 @@
             </div>
             
             <script>
+                window.addEventListener('scroll', function() {
+                    const scrollPos = window.scrollY;
+                    const blurAmount = Math.min(20, scrollPos / 10);
+                
+                    document.body.style.backgroundImage = `url("circuit.jpeg")`;
+                    document.body.style.filter = `blur(${blurAmount}px)`;
+                });
+
                 /*Transition Graph: (...A<->C<->D<->B<->A<->C<->D<->B<->A...)*/
                 document.addEventListener("DOMContentLoaded", function() {
                     const carousel = document.querySelector('.carousel');
