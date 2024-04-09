@@ -67,6 +67,7 @@ h1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-top: 290px;
 }
 
 .carousel__item {
@@ -130,7 +131,7 @@ h1 {
   cursor: pointer;
   border: none;
   z-index: 999;
-  margin-top: 320px;
+  margin-top: 290px;
 }
 
 .arrow-btn:hover {

@@ -62,12 +62,6 @@
             </div>
             
             <script>
-                window.addEventListener('scroll', function() {
-                    var scrollTop = window.scrollY;
-                    var blurAmount = scrollTop / 50; // Adjust this value for the blur intensity
-                    document.body.style.filter = 'blur(' + blurAmount + 'px)';
-                });
-                
                 /*Transition Graph: (...A<->C<->D<->B<->A<->C<->D<->B<->A...)*/
                 document.addEventListener("DOMContentLoaded", function() {
                     const carousel = document.querySelector('.carousel');
