@@ -13,29 +13,42 @@
         <div class="rowContainer">
             <div class="repositoryContainer">
                 <div class="repositoryHolder">
-                    <div class="repositoryDrop"><i class="fa fa-xmark"></i></div>
+                    <div class="repositoryDrop"><i class="fa fa-code"></i></div>
                     <div class="repositoryHeader"></div>
                 </div>
                 <div class="space"></div>
                 <div class="repositoryHolder">
                     <div class="repositoryDrop"><i class="fa fa-caret-right"></i></div>
-                    <div class="repositoryHeader"></div>
+                    <div class="repositoryHeader"><div class="dropdown-content"></div></div>
                 </div>
             </div>
             <div class="space"></div>
             <div class="repositoryContainer">
                 <div class="repositoryHolder">
                     <div class="repositoryDrop"><i class="fa fa-caret-right"></i></div>
-                    <div class="repositoryHeader"></div>
+                    <div class="repositoryHeader"><div class="dropdown-content"></div></div>
                 </div>
                 <div class="space"></div>
                 <div class="repositoryHolder">
                     <div class="repositoryDrop"><i class="fa fa-caret-right"></i></div>
-                    <div class="repositoryHeader"></div>
+                    <div class="repositoryHeader"><div class="dropdown-content"></div></div>
                 </div>
             </div>
         </div>
         <ul id="repo-list"></ul>
+        <script>
+            const repLinks = document.querySelectorAll('.repositoryHolder');
+            function handleRepClick(event) {
+                repLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+                event.target.classList.add('active');
+            }
+            repLinks.forEach(link => {
+                link.addEventListener('click', handleRepClick);
+            });
+        </script>
+
         <script>
             async function fetchRepositories(username) {
                 try {
