@@ -23,7 +23,13 @@ h1 {
   margin-left: 10%;
   margin-right: 10%;
   width: 80%;
+  display: flex;
+  flex-direction: row;
   flex: 1;
+}
+
+.space{
+  flex: 0.5;
 }
 
 .repositoryHolder {
@@ -38,7 +44,7 @@ h1 {
     #fafbff 20px
   );
   border-radius: 35px;
-  width: 34%;
+  flex: 1;
   height: 110px;
 }
 
