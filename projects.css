@@ -15,29 +15,30 @@ body {
 
 h1 {
   color:rgb(212, 212, 222);
-  font-size: xx-large;
+  font-size: xxx-large;
   font-family: 'UniSansHeavy', Arial, sans-serif;
+  text-align: center;
 }
 
 .repositoryContainer {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 8%;
+  margin-right: 8%;
   width: 80%;
   display: flex;
   flex-direction: row;
   flex: 1;
+  margin-top: 2%;
+  margin-bottom: 4%;
 }
 
 .rowContainer {
-  margin-top: 5%;
-  margin-bottom: 5%;
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
 .space{
-  flex: 0.5;
+  flex: 0.45;
 }
 
 .repositoryHolder {
@@ -52,7 +53,16 @@ h1 {
     #fafbff 20px
   );
   border-radius: 35px;
+  display: flex;
+  flex-direction: row;
   flex: 1;
   height: 110px;
+}
+
+.repositoryDrop {
+  flex: .2;
+}
+.repositoryHeader {
+  flex: .8;
 }
 
