@@ -18,3 +18,20 @@ h1 {
   font-size: xx-large;
   font-family: 'UniSansHeavy', Arial, sans-serif;
 }
+
+.repositoryHolder {
+  color:rgb(0, 0, 0);
+  font-size: x-large;
+  font-family: 'UniSansHeavy', Arial, sans-serif;
+  background: repeating-linear-gradient(
+    -45deg,
+    #ffffff,
+    #ffffff 10px,
+    #fafbff 10px,
+    #fafbff 20px
+  );
+  border-radius: 8px;
+  width: 50%;
+  height: 400px;
+}
+
