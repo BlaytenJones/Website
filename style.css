@@ -86,7 +86,8 @@ body {
   background: linear-gradient(45deg, #170653, #050830);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 1200px;
+  height: 1024px;
+  overflow: clip;
   margin: 0;
   padding: 0;
   font-family: "Work Sans", sans-serif;

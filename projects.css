@@ -19,6 +19,13 @@ h1 {
   font-family: 'UniSansHeavy', Arial, sans-serif;
 }
 
+.repositoryContainer {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  flex: 1;
+}
+
 .repositoryHolder {
   color:rgb(0, 0, 0);
   font-size: x-large;
@@ -30,8 +37,8 @@ h1 {
     #fafbff 10px,
     #fafbff 20px
   );
-  border-radius: 8px;
-  width: 50%;
-  height: 400px;
+  border-radius: 35px;
+  width: 34%;
+  height: 110px;
 }
 
