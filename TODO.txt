@@ -10,7 +10,7 @@ COMPLETED:
 UP-NEXT:
 [Javascript] AUDIO VISUALIZER
 [CSS, HTML, Java, PHP, Angular] CREATE BROWSER CHESS GAME
-[CSS, HTML, Javascript, Angular] MULTIPLAYER YAHTZEE SOCKET GAME USING MEAN
+[CSS, HTML, Javascript, Angular] MULTIPLAYER MAFIA SOCKET GAME USING MEAN
 [Python] VOICE ASSISTANT WITH CHAT GPT API (https://www.geeksforgeeks.org/voice-assistant-using-python/)
 [C] SPARSE MATRIX STORAGE (https://www.ibm.com/docs/en/essl/6.3?topic=matrix-sparse-storage-representation)
 [Python] VIDEO SUBTITLE GENERATOR
@@ -27,7 +27,7 @@ UP-NEXT:
 [CSS, HTML, Java, PHP, Angular] CREATE TAMAGOTCHI WEBBROWSER PET
 [Angular, Go] REAL TIME CHAT APPLICATION (https://www.thepolyglotdeveloper.com/2016/12/create-real-time-chat-app-golang-angular-2-websockets/)
 [C++] WEBSCRAPER FROM SCRATCH
-[Cs] BIOLOGY PREDICTION SIMULATOR BASED ON VIRUS DNA USING BLOOM FILTER AND K-MERS
+[C++] BIOLOGY PREDICTION SIMULATOR BASED ON VIRUS DNA USING BLOOM FILTER AND K-MERS AND CUDA
 [Go] INTERPRETER
 [Swift] PHONE GAME
 [C++] ART PROGRAM
