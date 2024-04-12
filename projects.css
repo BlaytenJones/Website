@@ -80,7 +80,7 @@ h1 {
   z-index: 1;
 }
 
-.repositoryHolder:active .dropdown-content {
-  display: block;
+.repositoryHolder:active {
+  height: 330px;
 }
 
