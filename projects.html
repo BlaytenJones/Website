@@ -40,13 +40,13 @@
             const repLinks = document.querySelectorAll('.repositoryHolder');
             function handleRepClick(event) {
                 repLinks.forEach(link => {
-                    link.classList.remove('active');
+                    link.classList.remove('open');
                     const caretIcon = link.querySelector('.fa-caret-down');
                     if (caretIcon) {
                         caretIcon.classList.replace('fa-caret-down', 'fa-caret-right');
                     }
                 });
-                event.target.classList.add('active');
+                event.target.classList.add('open');
                 const caretIcon = event.currentTarget.querySelector('.fa-caret-right');
                 if (caretIcon) {
                     caretIcon.classList.replace('fa-caret-right', 'fa-caret-down');
