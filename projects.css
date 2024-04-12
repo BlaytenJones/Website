@@ -80,10 +80,10 @@ h1 {
   z-index: 1;
 }
 
-.repositoryHolder:open {
+.repositoryHolder.open {
   height: 330px;
 }
-.repositoryHolder:open .repositoryDrop {
+.repositoryHolder.open .repositoryDrop {
   align-content: normal;
 }
 
