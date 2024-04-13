@@ -46,6 +46,7 @@
                         caretIcon.classList.replace('fa-caret-down', 'fa-caret-right');
                     }
                 });
+                event.target.add('open');
                 event.target.classList.add('open');
                 const caretIcon = event.currentTarget.querySelector('.fa-caret-right');
                 if (caretIcon) {
