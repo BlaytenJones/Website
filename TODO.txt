@@ -10,9 +10,10 @@ COMPLETED:
 UP-NEXT:
 [Javascript] AUDIO VISUALIZER
 [CSS, HTML, Java, PHP, Angular] CREATE BROWSER CHESS GAME
+[CSS, HTML, Java] CREATE R/OURPLACE CLONE
 [CSS, HTML, Javascript, Angular] MULTIPLAYER MAFIA SOCKET GAME USING MEAN
 [Python] VOICE ASSISTANT WITH CHAT GPT API (https://www.geeksforgeeks.org/voice-assistant-using-python/)
-[C] SPARSE MATRIX STORAGE (https://www.ibm.com/docs/en/essl/6.3?topic=matrix-sparse-storage-representation)
+[C] SPARSE MATRIX STORAGE FOR GRAPH ADJACENCY (https://www.ibm.com/docs/en/essl/6.3?topic=matrix-sparse-storage-representation)
 [Python] VIDEO SUBTITLE GENERATOR
 [Java] SUDOKU SOLVER WITH THREADING
 [CSS, HTML, Javascript] INTERACTIVE TERMINAL WEBSITE
@@ -31,6 +32,7 @@ UP-NEXT:
 [Go] INTERPRETER
 [Swift] PHONE GAME
 [C++] ART PROGRAM
+[ASM] ASSEMBLY LEVEL VIRUS
 [Cs] PHYSICS SIMULATOR
 [Python] ALGORITHM VISUALIZER
 [C++] SPREADSHEET
