@@ -18,7 +18,7 @@ UP-NEXT:
 [Java] SUDOKU SOLVER WITH THREADING
 [CSS, HTML, Javascript] INTERACTIVE TERMINAL WEBSITE
 [C++] TEXT EDITOR WITH AUTOCORRECT (https://www.averylaird.com/programming/the%20text%20editor/2017/09/30/the-piece-table)
-[Java] WORDLE CLONE WITH FULLSTACK
+[Java, Javascript, PHP] WORDLE CLONE WITH FULLSTACK
 [Cs, Javascript] IO GAME
 [Go] VIDEO COMPRESSION
 [C++] POROUS MEDIUM EQUATION USING THE BARENBLATT-KOMPANEETS-ZELDOVICH SIMILARITY SOLUTION AND ITS APPLICATION TO GAS FLOW (https://en.wikipedia.org/wiki/Porous_medium_equation) (https://userpages.umbc.edu/~rostamia/cbook/)

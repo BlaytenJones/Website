@@ -37,48 +37,52 @@
         </div>
         <ul id="repo-list"></ul>
         <script>
+            const repContainers = document.querySelectorAll('.repositoryHolder');
+            function handleRepClick(event) {
+                const isOpen = event.currentTarget.classList.contains('open');
+                repContainers.forEach(container => {
+                    container.classList.remove('open');
+                    const caretIcon = container.querySelector('.fa-caret-down');
+                    if (caretIcon) {
+                        caretIcon.classList.replace('fa-caret-down', 'fa-caret-right');
+                    }
+                });
+                if (!isOpen) {
+                    event.currentTarget.classList.add('open');
+                    const caretIcon = event.currentTarget.querySelector('.fa-caret-right');
+                    if (caretIcon) {
+                        caretIcon.classList.replace('fa-caret-right', 'fa-caret-down');
+                    }
+                }
+            }
+            repContainers.forEach(container => {
+                container.addEventListener('click', handleRepClick);
+            });
+        </script>
+
+        <script>
             async function fetchRepositories(username) {
                 try {
                     const response = await fetch(`https://api.github.com/users/${username}/repos`);
                     const repos = await response.json();
                     console.log("Repositories:", repos);
-                    const repoContainers = document.querySelectorAll('.repositoryHolder');
-        
+                    const repoList = document.getElementById('repo-list');
                     repos.forEach(async repo => {
-                        const repoContainer = document.createElement('div');
-                        repoContainer.classList.add('dropdown-content');
-                        repoContainer.style.display = 'none';
-        
+                        const li = document.createElement('li');
+                        li.textContent = repo.full_name;
+                        repoList.appendChild(li);
+
                         const contentsResponse = await fetch(`https://api.github.com/repos/${repo.full_name}/contents`);
                         const contents = await contentsResponse.json();
                         const folders = contents.filter(content => content.type === 'dir');
-        
+
+                        const folderList = document.createElement('ul');
                         folders.forEach(folder => {
-                            const folderItem = document.createElement('div');
+                            const folderItem = document.createElement('li');
                             folderItem.textContent = folder.name;
-                            folderItem.classList.add('dropdown-item');
-                            folderItem.addEventListener('click', () => {
-                                window.open(`https://github.com/${repo.full_name}/tree/master/${folder.name}`, '_blank');
-                            });
-                            repoContainer.appendChild(folderItem);
+                            folderList.appendChild(folderItem);
                         });
-        
-                        const repoIndex = Array.from(repoContainers).findIndex(container => container.querySelector('.repositoryHeader').textContent === repo.full_name);
-                        if (repoIndex !== -1) {
-                            repoContainers[repoIndex].querySelector('.dropdown-content').replaceWith(repoContainer);
-                        }
-                    });
-        
-                    repoContainers.forEach(container => {
-                        container.querySelector('.repositoryDrop').addEventListener('click', () => {
-                            const isOpen = container.classList.contains('open');
-                            repoContainers.forEach(container => {
-                                container.classList.remove('open');
-                            });
-                            if (!isOpen) {
-                                container.classList.add('open');
-                            }
-                        });
+                        li.appendChild(folderList);
                     });
                 } catch (error) {
                     console.error('Error fetching repositories:', error);
