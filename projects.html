@@ -35,54 +35,41 @@
                 </div>
             </div>
         </div>
-        <ul id="repo-list"></ul>
-        <script>
-            const repContainers = document.querySelectorAll('.repositoryHolder');
-            function handleRepClick(event) {
-                const isOpen = event.currentTarget.classList.contains('open');
-                repContainers.forEach(container => {
-                    container.classList.remove('open');
-                    const caretIcon = container.querySelector('.fa-caret-down');
-                    if (caretIcon) {
-                        caretIcon.classList.replace('fa-caret-down', 'fa-caret-right');
-                    }
-                });
-                if (!isOpen) {
-                    event.currentTarget.classList.add('open');
-                    const caretIcon = event.currentTarget.querySelector('.fa-caret-right');
-                    if (caretIcon) {
-                        caretIcon.classList.replace('fa-caret-right', 'fa-caret-down');
-                    }
-                }
-            }
-            repContainers.forEach(container => {
-                container.addEventListener('click', handleRepClick);
-            });
-        </script>
-
         <script>
             async function fetchRepositories(username) {
                 try {
                     const response = await fetch(`https://api.github.com/users/${username}/repos`);
                     const repos = await response.json();
                     console.log("Repositories:", repos);
-                    const repoList = document.getElementById('repo-list');
-                    repos.forEach(async repo => {
-                        const li = document.createElement('li');
-                        li.textContent = repo.full_name;
-                        repoList.appendChild(li);
+                    const repoContainers = document.querySelectorAll('.repositoryContainer');
 
-                        const contentsResponse = await fetch(`https://api.github.com/repos/${repo.full_name}/contents`);
-                        const contents = await contentsResponse.json();
-                        const folders = contents.filter(content => content.type === 'dir');
-
-                        const folderList = document.createElement('ul');
-                        folders.forEach(folder => {
-                            const folderItem = document.createElement('li');
-                            folderItem.textContent = folder.name;
-                            folderList.appendChild(folderItem);
-                        });
-                        li.appendChild(folderList);
+                    // Iterate over each repository container
+                    repoContainers.forEach((container, index) => {
+                        const repoHolder = container.querySelectorAll('.repositoryHolder')[1]; // Get the second repository holder
+                        if (index < repos.length) {
+                            const repo = repos[index];
+                            const repositoryHeader = repoHolder.querySelector('.dropdown-content');
+                            repositoryHeader.textContent = repo.full_name;
+                            
+                            // Fetch contents of the repository
+                            fetch(`https://api.github.com/repos/${repo.full_name}/contents`)
+                            .then(response => response.json())
+                            .then(contents => {
+                                const folders = contents.filter(content => content.type === 'dir');
+                                const folderList = document.createElement('ul');
+                                folders.forEach(folder => {
+                                    const folderItem = document.createElement('li');
+                                    folderItem.textContent = folder.name;
+                                    folderList.appendChild(folderItem);
+                                });
+                                repositoryHeader.appendChild(folderList);
+                            })
+                            .catch(error => {
+                                console.error('Error fetching contents:', error);
+                            });
+                        } else {
+                            repoHolder.style.display = 'none'; // Hide the extra repository container if there are no more repositories
+                        }
                     });
                 } catch (error) {
                     console.error('Error fetching repositories:', error);
