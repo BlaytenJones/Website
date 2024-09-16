@@ -166,6 +166,7 @@ h1 {
 .carousel__item-body {
   width: 100%;
   font-family: 'UniSansHeavy', Arial, sans-serif;
+  font-size: 23px;
   height: 460px;
   background: repeating-linear-gradient(
     -45deg,
@@ -205,6 +206,29 @@ h1 {
 
 .arrow-btn:not(:hover) {
   animation: floatDown 0.2s backwards;
+}
+
+.contactCard-head {
+  border-radius: 50%;
+  background: linear-gradient(45deg, #3f6eb6, #27418d);
+  color:rgb(255, 255, 255);
+  width: 180px;
+  height: 90px;
+  padding: 14px;
+  position: relative;
+  margin-right: -45px;
+  margin-bottom: 340px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.contactCard {
+  width: 90%;
+  height: 300px;
+
 }
 
 .title {
