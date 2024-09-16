@@ -209,7 +209,7 @@ h1 {
 }
 
 .contactCard-head {
-  border-radius: 50%;
+  border-radius: 25%;
   background: linear-gradient(45deg, #3f6eb6, #27418d);
   color:rgb(255, 255, 255);
   width: 180px;
@@ -228,7 +228,7 @@ h1 {
 .contactCard {
   width: 90%;
   height: 300px;
-
+  margin-top: 600px;
 }
 
 .title {
