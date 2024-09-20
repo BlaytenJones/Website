@@ -126,7 +126,6 @@ h1 {
 
 .carousel {
   position: relative;
-  flex-shrink: 0;
   width: 100%;
   max-width: 500px;
   display: flex;
@@ -136,7 +135,7 @@ h1 {
 }
 
 .screenConstraint {
-  display: flex;
+  /*display: flex;*/
   justify-content: center;
   width: 100%;
   margin-top: 290px;
