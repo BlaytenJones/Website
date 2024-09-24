@@ -80,7 +80,18 @@
                             CONTACT ME
                         </div>
                         <div class="contactCard-body">
-                            CONTACT CARD BODY
+                            <form action="https://api.web3forms.com/submit" method="POST">
+                                <input type="hidden" name="access_key" value="26116cbe-2596-4ee9-97a8-57e57c191532">
+                                Name:  <input type="text" name="name" required>
+                                <br>
+                                Email:  <input type="email" name="email" required>
+                                <br>
+                                Details:  <textarea name="message" required></textarea>
+                                <br>
+                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                                <br>
+                                <button type="submit">Submit Form</button>
+                            </form>
                         </div>
                     </a>
                 </div>
